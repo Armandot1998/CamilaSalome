@@ -19,67 +19,56 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Blogs</title>
-     </head>
-  <body>
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script>
-    $(document).on('ready',function(){
-        $('#botonesB').click(function(){
-            var inputText = document.getElementById("content");
-            var seleccion = document.getSelection();
-            var textOnInput = inputText.value;
-            var range;
-            if(seleccion.toString().length){
-              seleccion.setSelection();
-              /*range = seleccion.getRangeAt(0);   
-              range.deleteContents();            
-      
-              range.insertNode(document.createTextNode(replacementText));               }    
-              seleccion.insertNode("Holas");
-              */
-             //var newTextInput = textOnInput.replace(seleccion.toString(),"*"+seleccion.toString()+"*");
-                //inputText.value=newTextInput;
-            }
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/editor.js"></script>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/editor.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#content').Editor();
 
-        });
-    });
-</script>
-  <script>
-        $(document).on('ready',function(){
-            $('#botonesI').click(function(){
-                var inputText = document.getElementById("content");
-                var seleccion = document.getSelection();
-                var textOnInput = inputText.value;
-                inputText.value=seleccion.selectAllChildren;
+//			$('#content').Editor('setText', ['<p style="color:red;">Hola</p>']);
 
-                if(seleccion.toString().length){
-                    var newTextInput = textOnInput.replace(seleccion.toString(),"+"+seleccion.toString()+"+");
-                    inputText.value=seleccion.selectAllChildren();
-                }
-                seleccion= "nos sese ";
+			$('#btn_Agregar').click(function(e){
+				e.preventDefault();
+				$('#content').text($('#content').Editor('getText'));
+				$('#frm_Blog').submit();				
+			});
+		});	
+	</script>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-            });
-        });
-</script>
- <script>
-        $(document).on('ready',function(){
-            $('#botonesU').click(function(){
-                var inputText = document.getElementById("text");
-                var seleccion = document.getSelection();
-                var textOnInput = inputText.value;
-                if(seleccion.toString().length){
-                    var newTextInput = textOnInput.replace(seleccion.toString(),"_"+seleccion.toString()+"_");
-                    inputText.value=newTextInput;
-                }
+li {
+  float: left;
+}
 
-            });
-        });
-</script>  
-  <?php require 'partials/header.php' ?>
-    <div class="container-fluid">
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="./admin_Blog.php">Regresar</a></li>
+</ul>
+<div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
@@ -87,7 +76,7 @@
                     </div>
                     <div class="col-md-8" >
                     <div class="panel-body">
-                    <form role="form" action="./process/new_blog.php" method="post" enctype="multipart/form-data">
+                    <form role="form" action="./process/new_blog.php" method="post" enctype="multipart/form-data"  id="frm_Blog">
                                 <div class="form-group">
                                     <label for="title">Título</label>
                                     <input type="text" class="form-control" id="title" autocomplete="off" name="title" />
@@ -99,20 +88,18 @@
                                     <label >Fecha</label>
                                     <input  name="date_blog" type="date" max="3000-12-31" min="1000-01-01" value="<?php echo date("Y-m-d");?>" class="form-control">
                                 </div>
-                                <label>Contenido del blog</label>
-                                <textarea class="form-control" id="content" name ="content"   rows="10" cols="40" aria-label="With textarea"></textarea>
-                                <div class="btn-group">
-                                    <button type="button" id= "botonesB" class="btn btn-default"><b>B</b></button>
-                                    <button type="button" id= "botonesI" class="btn btn-default"><b><i>I</i></b></button>
-                                    <button type="button" id= "botonesU" class="btn btn-default"><b><u>U</u></b></button>
-                                </div>
                                 <div class="form-group">
                                     <label for="exampleInputFile">Imagen</label>
                                     <input type="file" class="form-control-file" class="btn btn-flat btn-sm" id="image" name="image" />
                                     <p class="help-block">Formato de imagenes admitido png, jpg, gif, jpeg</p>
                                     
                                 </div>
-                                <button type="submit" class="btn btn-flat btn-sm" class="btn btn-primary">Agregar Blog</button>
+                                <div class="form-group">
+                                <label>Contenido del blog</label>
+					            	<textarea id="content" name="content"></textarea>
+				            	</div>                               
+                              
+                                <button type="submit" id="btn_Agregar" name ="btn_Agregar" class ="btn btn-primary btn-lg btn-block" >Agregar Blog</button>
                             </form>
                             </div>
                     </div>
@@ -122,5 +109,6 @@
             </div>
         </div>
     </div>
-  </body>
+	
+</body>
 </html>
