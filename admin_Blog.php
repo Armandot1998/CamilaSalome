@@ -32,7 +32,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                        <a href="admin_new_Blog.php" id="navbarDropdownMenuLink" >Crear nuevo Blog</a>
+                        <a href="admin_new_Blog.php" id="navbarDropdownMenuLink"class ="btn btn-danger btn-lg btn-block" >Crear nuevo Blog</a>
             </div>
 
                 <!--=========================CAJAS DE BLOGS================================-->

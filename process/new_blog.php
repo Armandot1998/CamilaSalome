@@ -14,6 +14,7 @@
     $file_type = $_FILES['image']['type'];
 
     if(!$title=="" && !$date_blog=="" && !$content=="" && !$file_name==""){
+
         $conditional_file = stripos($file_type,"image/");
         if($conditional_file !== false){
                 
@@ -37,7 +38,7 @@
             echo "no vale tu formato pana";
         }        
     } else {
-        $message = 'Sorry, those credentials do not match';
+        echo "No tienes todos los campos requeridos llenos";
     }
      
     
