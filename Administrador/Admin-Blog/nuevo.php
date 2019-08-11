@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  require 'Conexion/conexion.php';
+  require '../../Conexion/conexion.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
@@ -21,12 +21,12 @@
 <html>
 <head>
 	<title></title>
-	<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/editor.js"></script>	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/editor.css">
+	<link rel="stylesheet" type="text/css" href="../css/editor.css">
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#content').Editor();
@@ -64,6 +64,10 @@ li a {
 </style>
 </head>
 <body>
+
+<ul>
+  <li><a href="./admin_Blog.php">Regresar</a></li>
+</ul>
 <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -93,29 +97,9 @@ li a {
                                 <div class="form-group">
                                 <label>Contenido del blog</label>
 					            	<textarea id="content" name="content"></textarea>
-                      </div>    
-                      <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-6">
-            <a href="Administrador/index.php" id="navbarDropdownMenuLink" class="btn btn-default" >Cancelar</a>
-						</div>
-						<div class="col-md-6">
-            <button type="submit" id="btn_Agregar" name ="btn_Agregar" class="btn btn-success">Agregar Blog</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>                         <br><br><br>  
+				            	</div>                               
+                              
+                                <button type="submit" id="btn_Agregar" name ="btn_Agregar" class ="btn btn-primary btn-lg btn-block" >Agregar Blog</button>
                             </form>
                             </div>
                     </div>

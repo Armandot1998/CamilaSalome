@@ -1,0 +1,88 @@
+body{
+    background: url(../Imagenes/background.jpg) 
+}
+
+.contenedor{
+    display: flex;
+    width: 500px;
+    height: 40px;
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+.col-md-4{
+    background-color: rgb(248, 248, 248);
+}
+
+.panim{
+    background-color: rgba(255, 251, 0, 0.726);
+}
+
+.anim{
+    list-style: none;
+    padding-left: 30px;
+    animation: cambiar 6s infinite;
+}
+
+ul, p {
+    margin: 0;
+}
+
+@keyframes cambiar{
+    0%{ margin-top: 10;}
+    20%{ margin-top: 10;}
+
+    25%{ margin-top: -40px;}
+    50%{ margin-top: -40px;}
+
+    55%{ margin-top: -80px;}
+    80%{ margin-top: -80px;}
+
+    85%{ margin-top: -40px;}
+    95%{ margin-top: -40px;}
+
+    100%{ margin-top: 0;}
+}
+
+#nost{
+    background-color: rgb(252, 252, 252);
+}
+
+footer{
+    background-color:#CE4890;
+}
+
+#back{
+    background-color:#CE4890;
+    color: white;
+}
+
+#fin{
+    background-color:rgba(0, 0, 0, 0.185);   
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+#an{
+    color: rgb(0, 0, 0);
+}
+
+#ng{
+    color: rgb(255, 255, 255); 
+}
+#col{
+    color: #CE4890;
+}

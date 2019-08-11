@@ -12,7 +12,7 @@ function random(){
 //1.-($_FILES['image']['tmp_name']) la imagen que se va a mover
 //2.-$_FILES['image']['type'] el tipo de imagen.
 function create_image($obj_File,$type_File){
-    require '../database.php';
+    require '../Conexion/conexion.php';
 
     $las_return;
     $codigo_fecha = date("Ymd"); 
@@ -33,7 +33,7 @@ function create_image($obj_File,$type_File){
             $stmt->execute();
             $results = $stmt->fetch(PDO::FETCH_ASSOC);
             if (count($results) > 0) {
-                if(move_uploaded_file($obj_File,"../images/".$nombre_archivo)){
+                if(move_uploaded_file($obj_File,"../Imagenes/Blog-Img/".$nombre_archivo)){
                     $las_return=$results['id_image'];
                 }
             }

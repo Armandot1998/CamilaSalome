@@ -2,8 +2,8 @@
 <?php
     session_start();
       
-    require '../database.php';
-    require './new_image.php';
+    require '../Conexion/conexion.php';
+    require 'new_image.php';
 
     $message = '';
     $title= $_POST['title'];
@@ -15,7 +15,7 @@
     $file_type = $_FILES['image']['type'];
     $ConditionalFile = "N";
 $sql_N ="";
-echo "no vale tu formato pana".$title;
+echo "Formato de Imagen no válido".$title;
 
     if(!$title=="" && !$date_blog=="" && !$content=="" ){
         
@@ -29,7 +29,7 @@ echo "no vale tu formato pana".$title;
             $stmt->execute();
             $results = $stmt->fetch(PDO::FETCH_ASSOC);
             if (count($results) > 0) {
-                unlink("../images/".$results['name_image']);       
+                unlink("../Imagenes/Blog-Img/".$results['name_image']);       
             } 
 
                 $id_image = create_image($_FILES['image']['tmp_name'],$_FILES['image']['type']);
@@ -58,7 +58,7 @@ echo "no vale tu formato pana".$title;
                 } else {
                     $message = 'Sorry there must have been an issue creating your account';
                 }
-header("Location: ../admin_Blog.php");
+header("Location: ../Administrador/index.php");
            
     } else {
         $message = 'Sorry, those credentials do not match';

@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  require 'database.php';
+  require 'Conexion/conexion.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
@@ -62,9 +62,6 @@ li a {
 
    </head>
   <body>
-  <ul>
-  <li><a href="./admin_Blog.php">Regresar</a></li>
-</ul>
   <?php 
   //SELECT * FROM blog inner join image on image.id_image = blog.id_image 
     
@@ -102,7 +99,7 @@ li a {
                                 </div>
                                 <div class="col-md-4" align="center">
 
-                                    <img style="max-width:100%;width:auto;height:auto;" alt="Bootstrap Thumbnail First" align="center" src="./images/'.$results['name_image'].'" />
+                                    <img style="max-width:100%;width:auto;height:auto;" alt="Bootstrap Thumbnail First" align="center" src="Imagenes/Blog-Img/'.$results['name_image'].'" />
                                 </div>
                                 <div class="col-md-4">
                                 </div>
@@ -129,7 +126,15 @@ li a {
                                 <label>Contenido del blog</label>
                                 <textarea id="content" name="content"></textarea>
                             </div>
-                            <button type="submit" id="btn_Agregar" name="btn_Agregar" class="btn btn-warning btn-lg btn-block">Guardar</button>
+                            <div class="row">
+                            <div class="col-md-6">
+                            <a href="Administrador/index.php" id="navbarDropdownMenuLink" class="btn btn-default" >Cancelar</a>
+                            
+                            </div>
+                            <div class="col-md-6">
+                            <button type="submit" id="btn_Agregar" name="btn_Agregar" class="btn btn-success" btn-lg btn-block">Guardar</button>
+                            </div>
+                          </div>
                         </form>
                     </div>
                 </div>

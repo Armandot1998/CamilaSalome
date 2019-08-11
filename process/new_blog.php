@@ -2,7 +2,7 @@
 <?php
     session_start();
       
-    require '../database.php';
+    require '../Conexion/conexion.php';
     require './new_image.php';
 
     $message = '';
@@ -29,7 +29,7 @@
                 $stmt->bindParam(':content', $content);
                 if ($stmt->execute()) {
                     $message = 'Successfully created new user';
-                    header("Location: ../admin_Blog.php");
+                    header("Location: ../Administrador/index.php");
 
                 } else {
                     $message = 'Sorry there must have been an issue creating your account';
