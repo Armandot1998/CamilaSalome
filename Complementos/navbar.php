@@ -72,8 +72,8 @@
                 </a>
               </li>
               <form class="form-inline">
-              <input type="button" class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" onclick=" location.href='http://www.google.com' " value="Donar"/> 
-              <input type="button" class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" onclick=" location.href='http://www.google.com' " value="Voluntariado"/> 
+              <input type="button" class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" onclick=" location.href='#' " value="Donar"/> 
+              <input type="button" class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" onclick=" location.href='../voluntariado.php " value="Voluntariado"/> 
               </form>
             </ul>
           </div>
@@ -116,7 +116,7 @@
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Tu Ayuda</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Voluntariado</a>
+                <a class="dropdown-item" href="voluntariado.php">Voluntariado</a>
                 <a class="dropdown-item" href="#">Donaciones</a>
               </div>
             </li>

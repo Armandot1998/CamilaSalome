@@ -121,10 +121,10 @@
 </div><br>
 <div class="container-fluid">
 	<div class="row"  id="nost">
-		<div class="col-md-6">
+		<div class="col-md-7">
 			<img width="640" height="450" alt="Bootstrap Image Preview" src="Imagenes/Nosotros.jpg" class="rounded" />
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-5">
     <div class="text-1">
 			<p> Somos una Organización sin fines de lucro aprobada mediante Resolución N°319 MINEDUC SEDMQ-2016
             del Ministerio de Educación del Ecuador, dedicada a la
