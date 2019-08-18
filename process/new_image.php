@@ -8,11 +8,14 @@ function random(){
     }
     return $cad;    
 }
-//los parametros es 
-//1.-($_FILES['image']['tmp_name']) la imagen que se va a mover
-//2.-$_FILES['image']['type'] el tipo de imagen.
-function create_image($obj_File,$type_File){
-    require '../Conexion/conexion.php';
+/*
+//los parametros son 
+1.-($_FILES['image']['tmp_name']) la imagen que se va a mover
+2.-$_FILES['image']['type'] el tipo de imagen.
+3.- La ruta para salir al origen (index.php) ejemplo "../../.."
+*/
+function create_image($obj_File,$type_File,$path_long){
+    require $path_long.'/Conexion/conexion.php';
 
     $las_return;
     $codigo_fecha = date("Ymd"); 
@@ -33,12 +36,36 @@ function create_image($obj_File,$type_File){
             $stmt->execute();
             $results = $stmt->fetch(PDO::FETCH_ASSOC);
             if (count($results) > 0) {
-                if(move_uploaded_file($obj_File,"../Imagenes/Blog-Img/".$nombre_archivo)){
+                if(move_uploaded_file($obj_File,$path_long."/Imagenes/Blog-Img/".$nombre_archivo)){
                     $las_return=$results['id_image'];
                 }
             }
         }
     }
+    return $las_return;
+}
+//los parametros son:
+/*
+//los parametros son 
+1.-($_FILES['image']['tmp_name']) la imagen que se va a mover
+2.-$_FILES['image']['type'] el tipo de imagen.
+3.- El nombre de la carpeta dentro de imagenes ejemplo "Blog-img/"
+4.- La ruta para salir al origen (index.php) ejemplo "../../.."
+*/
+function delete_image($id_image,$name_image,$name_Path,$path_long){
+    
+    require $path_long.'/Conexion/conexion.php';
+    //elimina imagen de la base de datos
+    $sql = 'DELETE FROM image WHERE id_image = :id_image';
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':id_image', $id_image);
+            if ($stmt->execute()) {
+                $message = 'Successfully created new user';
+            } else {
+                $message = 'Sorry there must have been an issue creating your account';
+            }
+        //Se elimina la imagen a nivel de archivo.
+            unlink($path_long."/Imagenes/".$name_Path.$name_image);   
     return $las_return;
 }
 ?>

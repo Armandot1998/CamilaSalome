@@ -1,9 +1,9 @@
 
 <?php
     session_start();
-      
-    require '../Conexion/conexion.php';
-    require './new_image.php';
+    $path_long = "../../..";
+    require $path_long.'/Conexion/conexion.php';
+    require $path_long.'/process/new_image.php';
 
     $message = '';
     $title= $_POST['title'];
@@ -18,7 +18,7 @@
         $conditional_file = stripos($file_type,"image/");
         if($conditional_file !== false){
                 
-            $id_image = create_image($_FILES['image']['tmp_name'],$_FILES['image']['type']);
+            $id_image = create_image($_FILES['image']['tmp_name'],$_FILES['image']['type'],$path_long);
                 //inserta blog
                 $sql = "INSERT INTO blog(title,author,date_blog,id_image,content) VALUES (:title,:author,:date_blog,:id_image,:content)";
                 $stmt = $conn->prepare($sql);
@@ -29,7 +29,7 @@
                 $stmt->bindParam(':content', $content);
                 if ($stmt->execute()) {
                     $message = 'Successfully created new user';
-                    header("Location: ../Administrador/index.php");
+                    header("Location: ../../index.php");
 
                 } else {
                     $message = 'Sorry there must have been an issue creating your account';

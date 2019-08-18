@@ -191,8 +191,9 @@
                     if (count($results) > 0) {
                         if($rows==0){
                             echo '               
-                                 <div class="row">
-                                 ';
+                            <div class="row">
+                            <div class="col-md-12">
+                              <div class="row">                                 ';
                         }
                         echo '
                             <div class="col-md-4">
@@ -211,7 +212,9 @@
                         if($rows==3){
                             $rows= 0;
                             echo '               
-                                 <div class="row">
+                            </div>
+                            </div>
+                          </div>  
                                  ';
                         }
                     }

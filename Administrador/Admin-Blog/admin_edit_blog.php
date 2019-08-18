@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  require 'Conexion/conexion.php';
+  require '../../Conexion/conexion.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
@@ -22,12 +22,12 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="../../js/jquery-1.12.0.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/editor.js"></script>	
+	<script type="text/javascript" src="../../js/editor.js"></script>	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/editor.css">
+	<link rel="stylesheet" type="text/css" href="../../css/editor.css">
     <script type="text/javascript">
 		$(document).ready(function(){
 			$('#content').Editor();
@@ -99,7 +99,7 @@ li a {
                                 </div>
                                 <div class="col-md-4" align="center">
 
-                                    <img style="max-width:100%;width:auto;height:auto;" alt="Bootstrap Thumbnail First" align="center" src="Imagenes/Blog-Img/'.$results['name_image'].'" />
+                                    <img style="max-width:100%;width:auto;height:auto;" alt="Bootstrap Thumbnail First" align="center" src="../../Imagenes/Blog-Img/'.$results['name_image'].'" />
                                 </div>
                                 <div class="col-md-4">
                                 </div>
@@ -128,7 +128,7 @@ li a {
                             </div>
                             <div class="row">
                             <div class="col-md-6">
-                            <a href="Administrador/index.php" id="navbarDropdownMenuLink" class="btn btn-default" >Cancelar</a>
+                            <a href="../../Administrador/index.php" id="navbarDropdownMenuLink" class="btn btn-default" >Cancelar</a>
                             
                             </div>
                             <div class="col-md-6">
