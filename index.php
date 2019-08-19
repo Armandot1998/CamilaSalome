@@ -198,7 +198,7 @@
                         echo '
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img class="card-img-top" alt="Bootstrap Thumbnail First" src="Imagenes/Blog-Img/'.$results['name'].'" />
+                                    <img class="card-img-top" width="45" height="290" alt="Bootstrap Thumbnail First" src="Imagenes/Blog-Img/'.$results['name'].'" />
                                     <div class="card-block">
                                         <h5 class="card-title">'.$results['title'].'</h5>
                                         <p>

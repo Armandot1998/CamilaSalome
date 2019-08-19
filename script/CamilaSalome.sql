@@ -6,6 +6,10 @@ id int auto_increment primary key,
 email varchar(100) null,
 password varchar(100));
 
+create table image(
+id_image int auto_increment primary key,
+name varchar(250) not null);
+
 create table gallery(
 id_gallery int auto_increment primary key,
 category varchar(255) not null,
@@ -15,10 +19,6 @@ date_image timestamp not null ,
 status tinyint(1) NOT NULL DEFAULT '1' COMMENT '1=Active, 0=Inactive',
 FOREIGN KEY (id_image) REFERENCES image(id_image)
 );
-
-create table image(
-id_image int auto_increment primary key,
-name varchar(250) not null);
 
 create table blog(
 id_blog int auto_increment primary key,

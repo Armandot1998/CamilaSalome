@@ -14,3 +14,6 @@
 	<script type="text/javascript" src="slider/engine1/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section -->
 </head>
+<body>
+</body>
+</html>

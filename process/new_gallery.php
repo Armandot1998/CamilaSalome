@@ -1,8 +1,8 @@
 <?php
     session_start();
       
-    require '../database.php';
-    require './new_image.php';
+    require './Conexion/conexion.php';
+    require 'new_image.php';
 
     $message = '';
     $title= $_POST['title'];

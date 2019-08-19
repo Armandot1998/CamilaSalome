@@ -73,7 +73,7 @@
                         <a href="#" class="btn btn-flat btn-sm" role="button">
                             <font color="white">Blog</font>
                         </a>
-                        <a href="./admin_new_Blog.php" class="btn btn-flat btn-sm" role="button">
+                        <a href="#" class="btn btn-flat btn-sm" role="button">
                             <font color="white">Voluntariado</font>
                         </a>
                         <a href="#" class="btn btn-flat btn-sm" role="button">
@@ -123,7 +123,7 @@
                         }
                         echo '
                                       <div class="col-md-4">
-                                          <img class="card-img-top" alt="Bootstrap Thumbnail First" src="../Imagenes/Blog-Img/'.$results['name'].'" />
+                                          <img class="card-img-top" width="45" height="290" alt="Bootstrap Thumbnail First" src="../Imagenes/Blog-Img/'.$results['name'].'" />
                                           <p><h5 class="card-title">'.$results['title'].'</h5></p>
                                           <p>
                                             <a class="btn btn-outline-secondary waves-effect" href="./Admin-Blog/admin_edit_blog.php?id='.$results['id_blog'].'">Modificar</a>

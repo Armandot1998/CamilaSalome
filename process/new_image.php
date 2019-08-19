@@ -24,10 +24,10 @@ function create_image($obj_File,$type_File,$path_long){
     $sql = "INSERT INTO image(name) VALUES (:name)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':name', $nombre_archivo);
-    if ($stmt->execute()) {
-        $sql = "INSERT INTO image(name) VALUES (:name)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(':name', $nombre_archivo);
+    //if ($stmt->execute()) {
+        //$sql = "INSERT INTO image(name) VALUES (:name)";
+        //$stmt = $conn->prepare($sql);
+        //$stmt->bindParam(':name', $nombre_archivo);
         if ($stmt->execute()) {
             $message = 'Successfully created new user';       
             //Recupera id de la imagen
@@ -41,7 +41,7 @@ function create_image($obj_File,$type_File,$path_long){
                 }
             }
         }
-    }
+   // }
     return $las_return;
 }
 //los parametros son:
@@ -65,7 +65,7 @@ function delete_image($id_image,$name_image,$name_Path,$path_long){
                 $message = 'Sorry there must have been an issue creating your account';
             }
         //Se elimina la imagen a nivel de archivo.
-            unlink($path_long."/Imagenes/".$name_Path.$name_image);   
+            unlink($path_long."./Imagenes/".$name_Path.$name_image);   
     return $las_return;
 }
 ?>

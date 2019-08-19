@@ -28,7 +28,7 @@
                     <a href="./admin_new_Blog.php" class="btn btn-flat btn-sm" role="button">
                         <font color="white">Voluntariado</font>
                     </a>
-                    <a href="#" class="btn btn-flat btn-sm" role="button">
+                    <a href="./Detalle_Gallery.php" class="btn btn-flat btn-sm" role="button">
                         <font color="white">Galeria</font>
                     </a>
                 </nav>

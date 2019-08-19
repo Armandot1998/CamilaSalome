@@ -52,7 +52,7 @@
                         }
                         echo '
                         <div class="col-md-4">
-                        <img class="card-img-top" alt="Bootstrap Thumbnail First" src="Imagenes/Blog-Img/'.$results['name'].'" />
+                        <img class="card-img-top" width="45" height="290" alt="Bootstrap Thumbnail First" src="Imagenes/Blog-Img/'.$results['name'].'" />
                         <p><h5 class="card-title">'.$results['title'].'</h5></p>
                         <p>
                           <a class="btn btn-outline-secondary waves-effect" href="Detalle-Blog.php?id='.$results['id_blog'].'">Detalles</a>
