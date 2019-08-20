@@ -1,9 +1,9 @@
 
 <?php
     session_start();
-    $path_long = "../../..";
-    require $path_long.'/Conexion/conexion.php';
-    require $path_long.'/process/new_image.php';
+    $path_long = "../../../";
+    require $path_long.'Conexion/conexion.php';
+    require $path_long.'process/new_image.php';
 
     $message = '';
     $title= $_POST['title'];
@@ -12,13 +12,15 @@
     $content= $_POST['content'];
     $file_name = $_FILES['image']['name'];
     $file_type = $_FILES['image']['type'];
+//parametro para Colocar o eliminar imagen (puede estar vacio si no queremos una ruta especifica.)
+$name_path ="Blog-Img/"; //OBLIGATORIO - El "   /    " al final
 
     if(!$title=="" && !$date_blog=="" && !$content=="" && !$file_name==""){
 
         $conditional_file = stripos($file_type,"image/");
         if($conditional_file !== false){
                 
-            $id_image = create_image($_FILES['image']['tmp_name'],$_FILES['image']['type'],$path_long);
+            $id_image = create_image($_FILES['image']['tmp_name'],$_FILES['image']['type'],$name_path,$path_long);
                 //inserta blog
                 $sql = "INSERT INTO blog(title,author,date_blog,id_image,content) VALUES (:title,:author,:date_blog,:id_image,:content)";
                 $stmt = $conn->prepare($sql);

@@ -28,7 +28,8 @@
   <!-- Start WOWSlider.com HEAD section -->
 	<link rel="stylesheet" type="text/css" href="Slider/engine1/style.css" />
 	<script type="text/javascript" src="slider/engine1/jquery.js"></script>
-	<!-- End WOWSlider.com HEAD section -->
+    <!-- End WOWSlider.com HEAD section -->
+  <link rel="stylesheet" href="Css/estilo-imagen-Card.css">
 </head>
 <body><br>
 <div class="container-fluid">
@@ -196,17 +197,19 @@
                               <div class="row">                                 ';
                         }
                         echo '
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img class="card-img-top" width="45" height="290" alt="Bootstrap Thumbnail First" src="Imagenes/Blog-Img/'.$results['name'].'" />
-                                    <div class="card-block">
-                                        <h5 class="card-title">'.$results['title'].'</h5>
-                                        <p>
-                                        <a  class="btn btn-outline-secondary btn-rounded waves-effect" href="Detalle-Blog.php?id='.$results['id_blog'].'">Detalles »</a>
-                                        </p>
-                                    </div>
-                                </div>
+                          <div class="col-md-4 ">
+                            <div class="box">
+                              <img class="card-img-top" src="Imagenes/Blog-Img/'.$results['name'].'" alt="Image did not load...">
                             </div>
+                            <div class="card">
+                              <div class="card-block">
+                                <p><h5 class="card-title">'.$results['title'].'</h5></p>
+                                <p>
+                                  <a  class="btn btn-outline-secondary btn-rounded waves-effect" href="Detalle-Blog.php?id='.$results['id_blog'].'">Detalles »</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                             ';
                     $rows = $rows+1;
                         if($rows==3){

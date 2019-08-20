@@ -1,9 +1,11 @@
 
 <?php
     session_start();
-      
-    require '../../../Conexion/conexion.php';
-    require '../../../process/new_image.php';
+    //Parametro para retroceder a carpeta raiz, si 
+    $path_long = "../../../";//OBLIGATORIO - El "   /    " al final
+
+    require $path_long.'Conexion/conexion.php';
+    require $path_long.'process/new_image.php';
 
     $message = '';
     $title= $_POST['title'];
@@ -16,9 +18,11 @@
     $ConditionalFile = "N";
     $sql_N ="";
 
-    $path_long = "../../..";
     $name_image = "";
-    $id_image = "";
+    $id_image_D = "";
+
+    //parametro para Colocar o eliminar imagen (puede estar vacio si no queremos una ruta especifica.)
+    $name_path ="Blog-Img/"; //OBLIGATORIO - El "   /    " al final
 
 
     if(!$title=="" && !$date_blog=="" && !$content=="" ){
@@ -34,9 +38,9 @@
                 $results = $stmt->fetch(PDO::FETCH_ASSOC);
                 if (count($results) > 0) {
                     $name_image = $results['name_image'];
-                    $id_image = $results['id_image'];
+                    $id_image_D = $results['id_image'];
                 } 
-                $id_image = create_image($_FILES['image']['tmp_name'],$_FILES['image']['type'],$path_long);
+                $id_image = create_image($_FILES['image']['tmp_name'],$_FILES['image']['type'],$name_path,$path_long);
                 $sql_N =',id_image = :id_image
                         ';
                 $ConditionalFile="Y";
@@ -64,7 +68,7 @@
         }
         if($ConditionalFile==="Y"){
             //Eliminar imagen
-            delete_image($id_image,$name_image,"Blog-Img",$path_long);       
+            delete_image($id_image_D,$name_image,$name_path,$path_long);       
         }       
         header("Location: ../../../Administrador/index.php");
     } else {

@@ -24,6 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin</title>
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Css/estilo-imagen-Card.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -122,13 +123,15 @@
                             ';
                         }
                         echo '
-                                      <div class="col-md-4">
-                                          <img class="card-img-top" width="45" height="290" alt="Bootstrap Thumbnail First" src="../Imagenes/Blog-Img/'.$results['name'].'" />
-                                          <p><h5 class="card-title">'.$results['title'].'</h5></p>
-                                          <p>
-                                            <a class="btn btn-outline-secondary waves-effect" href="./Admin-Blog/admin_edit_blog.php?id='.$results['id_blog'].'">Modificar</a>
-                                            <a class="btn btn-outline-danger waves-effect" id="btnSA_'.$results['id_blog'].'" name ="'.$results['id_blog'].'" onClick= "EjecutarSweetAlert(this)">Eliminar</a>
-                                          </p>
+                                      <div class="col-md-4 ">
+                                        <div class="box">
+                                          <img class="card-img-top" src="../Imagenes/Blog-Img/'.$results['name'].'" alt="Image did not load...">
+                                        </div>
+                                        <p><h5 class="card-title">'.$results['title'].'</h5></p>
+                                        <p>
+                                          <a class="btn btn-outline-secondary waves-effect" href="./Admin-Blog/admin_edit_blog.php?id='.$results['id_blog'].'">Modificar</a>
+                                          <a class="btn btn-outline-danger waves-effect" id="btnSA_'.$results['id_blog'].'" name ="'.$results['id_blog'].'" onClick= "EjecutarSweetAlert(this)">Eliminar</a>
+                                        </p>
                                       </div>
                             ';
                     $rows = $rows+1;

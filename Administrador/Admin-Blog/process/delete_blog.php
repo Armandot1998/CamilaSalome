@@ -1,9 +1,11 @@
 <?php
     session_start();
-    $path_long ="../../..";
-    require $path_long.'/Conexion/conexion.php';
-    require $path_long.'/process/new_image.php';
+    $path_long ="../../../";
+    require $path_long.'Conexion/conexion.php';
+    require $path_long.'process/new_image.php';
 
+//parametro para Colocar o eliminar imagen (puede estar vacio si no queremos una ruta especifica.)
+$name_path ="Blog-Img/"; //OBLIGATORIO - El "   /    " al final
 
     $id_blog= $_GET['id'];
 
@@ -24,7 +26,7 @@
         if ($stmt->execute()) {
             $message = 'Successfully created new user';
 
-            delete_image($id_image,$name_image,"Blog-Img",$path_long);       
+            delete_image($id_image,$name_image,$name_path,$path_long);       
             header("Location: ../../index.php");
 
         } else {
