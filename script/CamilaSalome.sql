@@ -16,7 +16,6 @@ category varchar(255) not null,
 id_image int not null,
 title varchar(255) not null,
 date_image timestamp not null ,
-status tinyint(1) NOT NULL DEFAULT '1' COMMENT '1=Active, 0=Inactive',
 FOREIGN KEY (id_image) REFERENCES image(id_image)
 );
 
