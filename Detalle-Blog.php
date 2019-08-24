@@ -1,8 +1,18 @@
-<?php
-  session_start();
+<!-- INDICACIONES
 
-  require 'Conexion/conexion.php';
+- ESTA SECCION SE AGREGA TODA LA NOTICIA COMPLETA
+- REEMPLAZAR CON LA INFORMACIÓN CORRESPONDIENTE
+- LA FOTO DE LA NOTICIA SERÁ DE TAMAÑO 360px X 245px (ES NECESARIO QUE LA IMAGEN SIEMPRE ESTE A ESTA MEDIDA)
+- SOLO EDITAR LAS PARTES QUE SE INDICAN Y SUBIR EN EL SERVIDOR
+- UBICAR LOS TEXTOS UNICAMENTE EN LA LETRAS BLANCAS
 
+ -->
+<!DOCTYPE html>
+<html lang="es">
+<?php require 'meta.php';
+  require 'Conexion/conexion.php'; 
+  
+  
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
@@ -15,35 +25,54 @@
       $user = $results;
     }
   }
-?>
-<?php require 'Complementos/navbar.php' ?>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Blog</title>
-<link rel="stylesheet" href="Css/estilo-index.css">
-</head><br>
-  <body>
-  <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-1">
-		</div>
-		<div class="col-md-10">
-        <div class="row">
-<div class="view">
-  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(137).jpg" class="img-fluid" alt="Image of ballons flying over canyons with mask pattern one.">
-  <div class="mask pattern-3 flex-center waves-effect waves-light">
-    <b><h1 id="h1" class="white-text">BLOG</h1><b>
-  </div>
-</div><br>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  
+  ?>
+  <head>
 
-  <?php 
+        <!-- EDITAR TITULO DE LA NOTICIA -->
+        <title>Fundación Camila Salomé - Noticia</title>
+        <!-- FIN DE LA EDICIÓN -->
+
+        
+        <script type="text/javascript">
+		      $(document).ready(function(){
+            $('#content').Editor('setText', ['<?php echo $results['content']?>']);
+            $('#btn_Agregar').click(function(e){
+              e.preventDefault();
+              $('#content').text($('#content').Editor('getText'));
+              $('#frm_Blog').submit();				
+            });
+		      });	
+	</script>
+  </head>
+  <body class="boxed-layout pt-40 pb-40 pt-sm-0" data-bg-img="imagenes/colores.jpg">
+
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+      <div id="wrapper" class="clearfix">
+      <?php require'header.php'; ?>
+      <div class="main-content">
+        <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="Imagenes/Nosotros.jpg">
+          <div class="container pt-100 pb-50">
+            <div class="section-content pt-100">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="title text-white">Noticias</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <?php 
   //SELECT * FROM blog inner join image on image.id_image = blog.id_image 
     
     $stmt = $conn->prepare('SELECT blog.*,image.name as name_image FROM blog inner join image on image.id_image = blog.id_image   WHERE blog.id_blog = :id');
@@ -51,171 +80,70 @@
     $stmt->execute();
     $results = $stmt->fetch(PDO::FETCH_ASSOC);
     if (count($results) > 0) {
-     $date= date_format(date_create($results['date_blog']), "Y-m-d");
-     ?>
-       <script type="text/javascript">
-		$(document).ready(function(){
-	$('#content').Editor('setText', ['<?php echo $results['content']?>']);
-
-    $('#btn_Agregar').click(function(e){
-				e.preventDefault();
-				$('#content').text($('#content').Editor('getText'));
-				$('#frm_Blog').submit();				
-			});
-		});	
-	</script>
-    <?php
-    echo'
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-1">
-               
+      $date= date_format(date_create($results['date_blog']), "Y-m-d");
+  echo '<!-- NOTICIA COMPLETA -->
+  <section>
+    <div class="container mt-30 mb-30 pt-30 pb-30">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="blog-posts single-post">
+            <article class="post clearfix mb-0">
+              <div class="entry-header">
+                <div class="post-thumb thumb">
+              <!-- EN ESTA PARTE VA LA IMAGEN DE LA NOTICIA -->
+                  <img src="Imagenes/Blog-Img/'.$results['name_image'].'" alt="" class="img-responsive img-fullwidth">
+              <!-- EDITAR HASTA AQUÍ -->
                 </div>
-                <div class="col-md-10">
-                <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-      <div class="jumbotron">
-      <div class="container-fluid">
-	<div class="row">
-    <div class="col-md-6">
-    <img style="max-width:100%;width:auto;height:auto;" alt="Bootstrap Thumbnail First" align="center" src="Imagenes/Blog-Img/'.$results['name_image'].'" />
-		</div>
-    <div class="col-md-6">
-    <div class="card-body card-body-cascade text-center">
-    <!-- Title -->
-    <h4 class="card-title" ><strong>'.$results['title'].'</strong></h4>
-    <!-- Subtitle -->
-    <h5 class="blue-text pb-2"><strong>'.$results['author'].'</strong></h5>
-    <!-- Text -->
-    <p class="card-text">'.$results['date_blog'].' </p><br>
-
-    <!-- Linkedin -->
-    <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
-    <!-- Twitter -->
-    <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
-    <!-- Dribbble -->
-    <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
-  </div>
-		</div>
-	</div>
-</div><br>
-      <p class="card-text">'.$results['content'].'</p>
-      <a class="btn" href="index.php">Volver »</a>
-      </div>
-		</div>
-	</div>
-</div>
-<div class="container-fluid"  id="back">
-	<div class="row" >
-		<div class="col-md-12">
-    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-<!-- Grid column -->
-<div class="col-md-4 mb-3">
-  <h6 class="text-uppercase font-weight-bold">
-    <a href="#!">Nosotros</a>
-  </h6>
-  <p id="an">Yánez Pinzón N26-56 entre <br>Av. Colón 
-y La Niña Edf. Frago, Ofc. 1 
-Quito - Ecuador</p>
-                <a class="nav-link" href="#">
-                  <i class="fa fa-phone"></i> + 593 22556 747
-                  <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-link" href="#">
-                  <i class="fab fa-telegram-plane"></i> info@camilasalome.org
-                  <span class="sr-only">(current)</span>
-                </a>
-</div>
-<!-- Grid column -->
-
-<!-- Grid column -->
-<div class="col-md-4 mb-3">
-  <h6 class="text-uppercase font-weight-bold">
-    <a href="#!">Programas</a>
-  </h6>
-  <a class="nav-link" href="#">
-                   Aulas Domiciliárias
-                  <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-link" href="#">
-                  Apoyo Socioemocional
-                  <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-link" href="#">
-                  Amigo de Camila
-                  <span class="sr-only">(current)</span>
-                </a>
-</div>
-<!-- Grid column -->
-
-<!-- Grid column -->
-<div class="col-md-4 mb-3">
-  <h6 class="text-uppercase font-weight-bold">
-    <a href="#!">Información</a>
-  </h6>
-  <a class="nav-link" href="#">
-                  Código de Ética
-                  <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-link" href="#">
-                  Transparencia
-                  <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-link" href="#">
-                  Donaciones
-                  <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-link" href="#">
-                  Voluntariado
-                  <span class="sr-only">(current)</span>
-                </a>
-</div>
-</div>
-<!-- Grid row-->
-<hr class="rgba-white-light" style="margin: 0 15%;">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-    <div class="mb-5 flex-center">
-
-<!-- Facebook -->
-<a class="fb-ic">
-  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-</a>
-<!-- Twitter -->
-<a class="tw-ic">
-  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-</a>
-<!-- Google +-->
-<a class="gplus-ic">
-  <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-</a>
-<!--Instagram-->
-<a class="ins-ic">
-  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-</a>
-</div>
-		</div>
-	</div>
- <!-- Copyright -->
- <div class="footer-copyright text-center py-3" id="fin">© 2019 Copyright:
-    <a href="#" id="ng">YAVIRAC Developers</a>
-  </div>
-  <!-- Copyright -->
-                <div class="col-md-1">
+              </div>
+              <div class="entry-content">
+                <div class="entry-meta media no-bg no-border mt-15 pb-20">
+                <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
+                <ul>
+              <!-- EN ESTA PARTE VA LA FECHA DE LA NOTICIA -->
+                  <li class="font-16 text-white font-weight-600">9</li>
+                  <li class="font-12 text-white text-uppercase">Nov</li>
+                <!-- EDITAR HASTA AQUÍ -->
+                </ul>
+              </div>
+              <div class="media-body pl-15">
+                <div class="event-content pull-left flip">
+                <!-- EN ESTA PARTE VA EL TITULO DE LA NOTICIA -->
+                  <h4 class="entry-title text-white text-uppercase m-0"><a href="#">'.$results['title'].'</a></h4>
+                <!-- EDITAR HASTA AQUÍ -->
+                  <!-- EN ESTA PARTE VA EL AUTOR DE LA NOTICIA -->
+                  <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i>Por '.$results['author'].'</span>
+                <!-- EDITAR HASTA AQUÍ -->
                 </div>
-            </div>
+              </div>  
+            <!-- EN ESTA PARTE VA UN PARRAFO DE LA NOTICIA -->
+              <p class="mb-15" align="justify">'.$results['content'].'</p>
+            <!-- EDITAR HASTA AQUÍ -->
+          
+              <div class="mt-30 mb-0">
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+              </div>
+              <div class="fb-comments" data-href="https://www.facebook.com/fundacioncamilasalome" data-numposts="5"></div>
+              </div>
+              </div>
+            </article>
+          </div>
         </div>
+        <div class="col-md-3">
+          <div class="sidebar sidebar-left mt-sm-30">
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </section>
+';  
+?>
+     
+
+<?}?>
+      </div>
+    </div>
+      
+      <?php require'footer.php'; ?>
+      <script src="js/custom.js"></script>
   </body>
 </html>
-
-';};
-
- 
