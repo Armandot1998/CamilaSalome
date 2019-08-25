@@ -28,9 +28,44 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
- 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link href="./Admin-Gallery/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </head>
+<style>
 
+img.zoom {
+    width: 100%;
+    height: 290px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+    .modal-header {
+   
+     border-bottom: none;
+}
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+      display:none;  
+    }
+ </style> 
 <body >
 <?php if(!empty($user)): 
   require 'partials/navbar.php';?>
@@ -54,37 +89,40 @@
                 $stmt = $conn->prepare('SELECT id_gallery, category, image.name as name,title, date_image  FROM gallery inner join image on image.id_image = gallery.id_image where category="Programa de Sensibilización"');
                 $stmt->execute();
                // $results = $stmt->fetch(PDO::FETCH_ASSOC);
-                echo '<div class="container-fluid">
+                echo '<div class="container-fluid ">
                 ';
                 while($results = $stmt->fetch(PDO::FETCH_ASSOC)){
 
                     if (count($results) > 0) {
                         if($rows==0){
-                            echo '               
-                                <div class="row">
-                                  <div class="col-md-12">
-                                    <div class="row">
-
+                            echo ' 
+                            <div class="row">
+                            <div class="col-md-12 ">
+                            <div class="row">
                             ';
                         }
                         echo '
-                                      <div class="col-md-4 ">
-                                        <div class="box">
-                                          <img class="card-img-top" src="../Imagenes/Gallery-Img/'.$results['name'].'" alt="Image did not load...">
-                                        </div>
-                                        <div>
-                                        <p><h5 class="card-title">'.$results['title'].'</h5></p>
-                                        <p><h5 class="card-title">'.date("d/m/Y",strtotime($results['date_image'])).'</h5></p>
-                                        <div>
-                                      </div>
+                        <div class="col-md-4  pp-gallery ">
+                          <div  class="box">
+                            <a href="../Imagenes/Gallery-Img/'.$results['name'].'" class="fancybox" rel="ligthbox">
+                              <figure class="pp-effect">
+                                <img class="zoom img-fluid"  src="../Imagenes/Gallery-Img/'.$results['name'].'" alt="">
+                                <figcaption>
+                                  <div class="h4">'.$results['title'].'</div>
+                                  <p>'.date("d/m/Y",strtotime($results['date_image'])).'</p>
+                                </figcaption>
+                              </figure>
+                            </a>     
+                          </div>        
+                        </div>         
+                                                        
                             ';
                     $rows = $rows+1;
                         if($rows==3){
                             $rows= 0;
-                            echo '               
-                                    </div>
-                                  </div>
-                                </div>                                 
+                            echo ' </div>
+                            </div>
+                          </div>           
                             ';
                         }
                     }
@@ -94,6 +132,24 @@
                 ';
           ?>
 
+<script>
+$(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition');
+	}, function(){
+        
+		$(this).removeClass('transition');
+	});
+});
+    
+</script>    
+<link href="./Admin-Gallery/scripts/main.css" rel="stylesheet">
 <?php else: ?>
       <!DOCTYPE html>
       <html>

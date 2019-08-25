@@ -47,9 +47,10 @@
       				swal("El archivo ha sido eliminado!", {
 				        icon: "success",
 				      });
-            window.location ='./Admin-Gallery/crud/delete_gallery.php?id='+boton.nam  e;
+            window.location ='delete_volunteering.php?id='+boton.name;
 			  } else {
 				swal("Operación cancelada!");
+
 			  }
 			});	
 		});
@@ -58,9 +59,10 @@
 </script>  
 <body >
 <?php if(!empty($user)):
+require 'partials/navbar.php';
 ?>
-
-  
+  <br>
+  <br>  
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -87,6 +89,7 @@
                     <th class="text-center">Razones del voluntariado</th>
                     <th class="text-center">Atividades que puede colaborar</th>
                     <th class="text-center">Tiempo Voluntariado</th>
+                    <th class= "text-center">Acciones</th>
 
                   </tr>     
                 </thead>
@@ -112,8 +115,7 @@
                       <td class="text-center"><?php echo $results['reasons_vol'];?></td>
                       <td class="text-center"><?php echo $results['activities'];?></td>
                       <td class="text-center"><?php echo $results['time_vol'];?></td>
-                      <td class="text-center"><a class="btn btn-outline-secondary " href="./Admin-Gallery/admin_galleryU.php?id=<?php echo $results['id_gallery'];?>"><span class="fas fa-edit"></span></a>                      
-                                              <a class="btn btn-outline-danger " id="btnSA_<?php echo $results['id_gallery'];?>" name ="<?php echo $results['id_gallery'];?>" onClick= "EjecutarSweetAlert(this)"><span class="fas fa-trash-alt"></span></a></td>
+                      <td class="text-center"><a class="btn btn-outline-danger " id="btnSA_<?php echo $results['id_volunteering'];?>" name="<?php echo $results['id_volunteering'];?>"  onClick= "EjecutarSweetAlert(this)"><span class="fas fa-trash-alt"></span></a></td>
                       </tr>                              
                   <?php } ?>
                   </tbody>

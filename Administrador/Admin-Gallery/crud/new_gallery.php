@@ -28,7 +28,7 @@ $name_path ="Gallery-Img/"; //OBLIGATORIO - El "   /    " al final
                 $stmt->bindParam(':date_image', $date_image);
                 if ($stmt->execute()) {
                     
-                    header("Location: ../admin_gallery.php");
+                    header("Location: ../../gallery.php");
                     $message = 'Successfully created new user';
                 } else {
                     $message = 'Debe  tener una cuenta';
@@ -44,8 +44,4 @@ $name_path ="Gallery-Img/"; //OBLIGATORIO - El "   /    " al final
 ?>
              
 
-                
-     
-    
-?>
-             
+                             
