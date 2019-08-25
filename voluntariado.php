@@ -32,6 +32,9 @@
 	<link rel="stylesheet" type="text/css" href="Slider/engine1/style.css" />
 	<script type="text/javascript" src="slider/engine1/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section --> 
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
   <body>
   
@@ -164,6 +167,59 @@
                                     <input type="text" class="form-control"   name="telefono" required/>
                                 </div>
 
+                                <label for="author">Actividades en las que podría colaborar</label>
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad1" value="Auxiliar docente" name="1actv">
+                                 <label class="custom-control-label" for="actividad1">Auxiliar docente</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad2" value="Temas administrativos" name="2actv">
+                                 <label class="custom-control-label" for="actividad2">Temas administrativos</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad3" value="Ayuda psicológica" name="3actv">
+                                 <label class="custom-control-label" for="actividad3">Ayuda psicológica</label>
+                                </div>
+
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad4" value="Asuntos legales" name="4actv">
+                                 <label class="custom-control-label" for="actividad4">Asuntos legales</label>
+                                </div>
+
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad5" value="Actividades extra curriculares" name="5actv">
+                                 <label class="custom-control-label" for="actividad5">Actividades extra curriculares</label>
+                                </div>
+
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad6" value="Manejo de imagen de la fundación" name="6actv">
+                                 <label class="custom-control-label" for="actividad6">Manejo de imagen de la fundación</label>
+                                </div>
+
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad7" value="Manejo de redes sociales" name="7actv">
+                                 <label class="custom-control-label" for="actividad7">Manejo de redes sociales</label>
+                                </div>
+
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad8" value="Gestión de búsqueda de fondos" name="8actv">
+                                 <label class="custom-control-label" for="actividad8">Gestión de búsqueda de fondos</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="actividad9" value="Gestión Gubernamental" name="9actv">
+                                 <label class="custom-control-label" for="actividad9">Gestión Gubernamental</label>
+                                </div>
+            <br>
+
 
 
 		            </div>
@@ -200,12 +256,14 @@
                                 </div>
 
 
-
+                   
 		           
 	                </div>
                     </div>
 
                                 <label>Razones por las que quiere ser voluntario</label>
+                                <br>
+                   
                                 <textarea class="form-control" name ="razones_vol"   rows="10" cols="40" aria-label="With textarea"></textarea>
                                 <br>
                                 
