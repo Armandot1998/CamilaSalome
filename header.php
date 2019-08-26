@@ -43,7 +43,7 @@
       <div class="header-nav-wrapper navbar-scrolltofixed bg-silver-light">
         <div class="container">
           <nav id="menuzord-right" class="menuzord default no-bg">
-            <a class="menuzord-brand pull-left flip" href="index.html"><img src="imagenes/logo.png" alt=""></a>
+            <a class="menuzord-brand pull-left flip" href="index.php"><img src="imagenes/logo.png" alt=""></a>
             <ul class="menuzord-menu">
               <li class="active"><a href="index.php">Inicio</a>
               </li>
