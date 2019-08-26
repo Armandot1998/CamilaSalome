@@ -30,7 +30,7 @@
                 <li class="mt-sm-10 mb-sm-10">
                   <!-- Modal: Appointment Starts -->
                   <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10" href="donaciones.html">Donar</a>
-                  <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10" href="voluntariado.html">Voluntariado</a>
+                  <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10" href="voluntariado.php">Voluntariado</a>
                 </li>
                 </li>
               </ul>
@@ -69,7 +69,7 @@
               </li>
               <li><a href="#">Tu Ayuda</a>
                 <ul class="dropdown">
-                  <li><a href="voluntariado.html">Voluntariado</a>
+                  <li><a href="voluntariado.php">Voluntariado</a>
                   </li>
                   <li><a href="donaciones.html">Donaciones</a>
                   </li>
