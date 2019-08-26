@@ -190,7 +190,42 @@ table {
 td,th {
     padding: 0
 }
-
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  .carousel-fade .carousel-inner .active {
+    opacity: 1;
+  }
+  
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }
+  
+  .carousel-fade .carousel-control {
+    z-index: 2;
+  }
+  
+  /*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  now override the 3.3 new styles for modern browsers & apply opacity
+  */
+  
+      .carousel,
+      .carousel-inner,
+      .carousel-inner .item {
+        height: 100%;
+      }
+  
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
     *,:after,:before {
@@ -6694,6 +6729,7 @@ button.close {
 .carousel-inner {
     position: relative;
     width: 100%;
+    height: 320px;
     overflow: hidden
 }
 
@@ -6750,7 +6786,9 @@ button.close {
 .carousel-inner>.next,.carousel-inner>.prev {
     position: absolute;
     top: 0;
-    width: 100%
+    width: 100%;
+    height: 100%;
+    
 }
 
 .carousel-inner>.next {

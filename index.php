@@ -479,59 +479,8 @@
       </div>
     </section>
 
-    <!-- Section: Our Portfolio -->
-    <section id="gallery">
-      <div class="container">
-        <div class="section-title text-center">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <h2 class="text-uppercase line-bottom-center mt-0" style="color: #7fb03e"><span class="font-weight-600">Galería</span></h2>
-              <div class="title-icon">
-                <i class="flaticon-charity-hand-holding-a-heart"></i>
-              </div>
-              <p>Conoce un poco más a nuestros estudiantes y las actividades que realizamos junto a ellos.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-
-            <!-- Portfolio Gallery Grid -->
-            <div id="grid" class="gallery-isotope grid-3 masonry gutter-10 clearfix">
-
-              <!-- Portfolio Item Start -->
-              <div class="gallery-item breakfast">
-                <div class="thumb">
-                  <a href="galeriavisitahospital.html"><img class="img-fullwidth" src="imagenes/galeria/hospital.jpg" alt="project"></a>
-                </div>
-                <h4 class="font-22 mb-0" align="center">Visita al Hospital</h4>
-              </div>
-              <!-- Portfolio Item End -->
-
-              <!-- Portfolio Item Start -->
-              <div class="gallery-item breakfast special">
-                <div class="thumb">
-                  <a href="galerianinos.html"><img class="img-fullwidth" src="imagenes/galeria/estudiante2.jpg" alt="project"></a>
-                </div>
-                <h4 class="font-22 mb-0" align="center">Aulas Domiciliarias</h4>
-              </div>
-              <!-- Portfolio Item End -->
-
-              <!-- Portfolio Item Start -->
-              <div class="gallery-item dinner">
-                <div class="thumb">
-                  <a href="galeriavacacional.html"><img class="img-fullwidth" src="imagenes/galeria/voluntariado.jpg" alt="project"></a>
-                </div>
-                <h4 class="font-22 mb-0" align="center">Vacacional</h4>
-              </div>
-              <!-- Portfolio Item End -->
-
-            </div>
-            <!-- End Portfolio Gallery Grid -->
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Section: Gallery -->
+    <?php  require 'Galeria.php' ?>
 
     <!-- Section: blog -->
     <?php
