@@ -32,7 +32,7 @@ function create_image($obj_File,$type_File,$name_Path,$path_long){
             $stmt->execute();
             $results = $stmt->fetch(PDO::FETCH_ASSOC);
             if (count($results) > 0) {
-                if(move_uploaded_file($obj_File,$path_long."/Imagenes/".$name_Path.$nombre_archivo)){
+                if(move_uploaded_file($obj_File,$path_long."/imagenes/".$name_Path.$nombre_archivo)){
                     $las_return=$results['id_image'];
                 }
             }
@@ -55,7 +55,7 @@ function delete_image($id_image,$name_image,$name_Path,$path_long){
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':id_image', $id_image);
             if ($stmt->execute()) {
-                unlink($path_long."/Imagenes/".$name_Path.$name_image);   
+                unlink($path_long."/imagenes/".$name_Path.$name_image);   
             } else {
                 //print_r($conn->errorInfo());
                 //print_r($stmt->errorInfo());

@@ -534,7 +534,14 @@
     </section>
 
     <!-- Section: blog -->
-    <?php require'bloginicio.php'; ?>
+    <?php
+    //--------------QUEMADO------------//
+    //require 'bloginicio.php';
+    //--------------QUEMADO------------//
+
+     require 'blog-index.php'; 
+    
+    ?>
     <!-- Section: blog -->
 
     
@@ -557,7 +564,7 @@
   <!-- end main-content -->
   
   <!-- Footer -->
-<?php require'footer.php'; ?>
+<?php require 'footer.php'; ?>
 
   
 <!-- end wrapper -->

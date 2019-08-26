@@ -9,6 +9,7 @@
                 <li><a href="https://www.facebook.com/fundacioncamilasalome" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/Funcamilasalome" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCPO9Ep5Yv2ty0J7bj0GSpMQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://instagram.com/fundcamilasalome?igshid=1t9825apy9den" target="_blank"><i class="fa fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
@@ -16,12 +17,10 @@
             <div class="widget no-border m-0">
               <ul class="list-inline pull-right flip sm-pull-none sm-text-center mt-5">
                 <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-white"></i> <a class="text-white" href="#">+593 - 22556 - 747</a> </li>
+                <li class="text-white">|</li>
                 <li class="text-white m-0 pl-10 pr-10"> <i class="fa fa-clock-o text-white"></i> Lun-Vie 8:00 to 17:00 </li>
+                <li class="text-white">|</li>
                 <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-white"></i> <a class="text-white" href="mailo:info@camilasalome.org">info@camilasalome.org</a> </li>
-                <li class="text-white">|</li>
-                <li> <a class="text-white" href="http://www.camilasalome.org/ENG">EN</a> </li>
-                <li class="text-white">|</li>
-                <li> <a class="text-white" href="http://www.camilasalome.org/FR">FR</a> </li>
               </ul>
             </div>
           </div>

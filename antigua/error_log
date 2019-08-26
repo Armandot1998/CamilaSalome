@@ -1,0 +1,11 @@
+[05-Jul-2016 16:55:11 UTC] PHP Warning:  explode() expects parameter 3 to be long, string given in /home2/camilasa/public_html/wp-content/themes/alone/framework/template-functions.php on line 334
+[05-Jul-2016 16:55:11 UTC] PHP Warning:  array_pop() expects parameter 1 to be array, null given in /home2/camilasa/public_html/wp-content/themes/alone/framework/template-functions.php on line 336
+[05-Jul-2016 16:55:11 UTC] PHP Warning:  implode(): Invalid arguments passed in /home2/camilasa/public_html/wp-content/themes/alone/framework/template-functions.php on line 337
+[08-Jul-2016 20:28:40 UTC] PHP Fatal error:  Call to a member function get_price_html() on a non-object in /home2/camilasa/public_html/wp-content/plugins/lemongrid/templates/post_lemongrid--filter-woocommentcy.php on line 105
+[10-Jul-2016 05:42:16 UTC] PHP Warning:  array_unshift() expects parameter 1 to be array, null given in /home2/camilasa/public_html/wp-includes/class-wp-xmlrpc-server.php on line 596
+[28-Nov-2016 21:48:21 UTC] PHP Warning:  array_unshift() expects parameter 1 to be array, null given in /home2/camilasa/public_html/wp-includes/class-wp-xmlrpc-server.php on line 596
+[01-Jan-2018 17:07:46 UTC] PHP Warning:  strpos(): Empty needle in /home2/camilasa/public_html/wp-includes/rest-api/class-wp-rest-request.php on line 1008
+[07-Mar-2018 15:20:15 America/Chicago] PHP Warning:  require(/home1/camilasalome/public_html/wp-includes/load.php): failed to open stream: No such file or directory in /home1/camilasalome/public_html/wp-settings.php on line 19
+[07-Mar-2018 15:20:15 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home1/camilasalome/public_html/wp-includes/load.php' (include_path='.:/opt/php54/lib/php') in /home1/camilasalome/public_html/wp-settings.php on line 19
+[07-Mar-2018 15:31:04 America/Chicago] PHP Warning:  require(/home1/camilasalome/public_html/wp-includes/load.php): failed to open stream: No such file or directory in /home1/camilasalome/public_html/wp-settings.php on line 19
+[07-Mar-2018 15:31:04 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home1/camilasalome/public_html/wp-includes/load.php' (include_path='.:/opt/php54/lib/php') in /home1/camilasalome/public_html/wp-settings.php on line 19

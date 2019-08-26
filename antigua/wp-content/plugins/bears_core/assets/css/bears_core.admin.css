@@ -1,0 +1,57 @@
+.bt-verify-import-sample-data{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.table-validate-import{
+	width: 500px;
+	margin: 0 auto;
+	border: solid 1px #ddd;
+}
+.bt-verify-import-sample-data .title{
+	background: #333 none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding: 2px 26px;
+    text-transform: uppercase;
+}
+.validate-import-item.item-header{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.bt-verify-import-sample-data .validate-import-item span.val.requirements{
+	font-weight: bold;
+}
+.bt-verify-import-sample-data .validate-import-item{
+	display: inline-block;
+    font-size: 10px;
+    padding: 4px 8px;
+    vertical-align: top;
+    width: calc(100% - 16px);
+    text-align: left;
+}
+.bt-verify-import-sample-data .validate-import-item:nth-child(odd){
+	background: #ececec;
+}
+.bt-verify-import-sample-data .validate-import-item label,
+.bt-verify-import-sample-data .validate-import-item span,
+.bt-verify-import-sample-data .validate-import-item i{
+	display: inline-block;
+	vertical-align: middle;
+}
+.bt-verify-import-sample-data .validate-import-item label{
+	text-transform: uppercase;
+	min-width: 220px;
+}
+.bt-verify-import-sample-data .validate-import-item span.val{
+	min-width: 100px;
+}
+.bt-verify-import-sample-data .validate-import-item.color-green{
+	color: green;
+}
+.bt-verify-import-sample-data .validate-import-item.color-red{
+	color: red;
+}

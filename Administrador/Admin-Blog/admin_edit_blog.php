@@ -99,7 +99,7 @@ li a {
                                 </div>
                                 <div class="col-md-4" align="center">
 
-                                    <img style="max-width:100%;width:auto;height:auto;" alt="Bootstrap Thumbnail First" align="center" src="../../Imagenes/Blog-Img/'.$results['name_image'].'" />
+                                    <img style="max-width:100%;width:auto;height:auto;" alt="Bootstrap Thumbnail First" align="center" src="../../imagenes/Blog-Img/'.$results['name_image'].'" />
                                 </div>
                                 <div class="col-md-4">
                                 </div>

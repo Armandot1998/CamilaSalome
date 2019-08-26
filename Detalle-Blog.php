@@ -61,7 +61,7 @@
       <div id="wrapper" class="clearfix">
       <?php require'header.php'; ?>
       <div class="main-content">
-        <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="Imagenes/Nosotros.jpg">
+        <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="magenes/Nosotros.jpg">
           <div class="container pt-100 pb-50">
             <div class="section-content pt-100">
               <div class="row">
@@ -91,7 +91,7 @@
               <div class="entry-header">
                 <div class="post-thumb thumb">
               <!-- EN ESTA PARTE VA LA IMAGEN DE LA NOTICIA -->
-                  <img src="Imagenes/Blog-Img/'.$results['name_image'].'" alt="" class="img-responsive img-fullwidth">
+                  <img src="imagenes/Blog-Img/'.$results['name_image'].'" alt="" class="img-responsive img-fullwidth">
               <!-- EDITAR HASTA AQUÍ -->
                 </div>
               </div>
@@ -143,7 +143,7 @@
       </div>
     </div>
       
-      <?php require'footer.php'; ?>
+      <?php require 'footer.php'; ?>
       <script src="js/custom.js"></script>
   </body>
 </html>

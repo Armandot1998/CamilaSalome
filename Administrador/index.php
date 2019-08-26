@@ -24,7 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin-Blog</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../Css/estilo-imagen-Card.css">
+    <link rel="stylesheet" href="../css/estilo-imagen-Card.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -99,7 +99,7 @@
                         echo '
                                       <div class="col-md-4 ">
                                         <div class="box">
-                                          <img class="card-img-top" src="../Imagenes/Blog-Img/'.$results['name'].'" alt="Image did not load...">
+                                          <img class="card-img-top" src="../imagenes/Blog-Img/'.$results['name'].'" alt="Image did not load...">
                                         </div>
                                         <p><h5 class="card-title">'.$results['title'].'</h5></p>
                                         <p>
