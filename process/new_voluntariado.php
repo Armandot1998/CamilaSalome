@@ -129,7 +129,7 @@ require '../Conexion/conexion.php';
          <h5 style="color: #e67e22; margin: 0 0 7px">Lugar de trabajo: <h6> '.$lugar_tra.' </h6></h5> 
          <h5 style="color: #e67e22; margin: 0 0 7px">Cargo que ejerce: <h6> '.$cargo_tra.' </h6></h5> 
          <h5 style="color: #e67e22; margin: 0 0 7px">Tiempo de voluntariado: <h6> '.$tiempo.' </h6></h5> 
-         <h5 style="color: #e67e22; margin: 0 0 7px">Raazones de voluntariado: <h6> '.$razones.' </h6></h5> 
+         <h5 style="color: #e67e22; margin: 0 0 7px">Razones de voluntariado: <h6> '.$razones.' </h6></h5> 
          <h5 style="color: #e67e22; margin: 0 0 7px">Actividades en la que podia colaborar: <h6> '.$actividades.' </h6></h5> 
         
            <br>
