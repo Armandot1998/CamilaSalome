@@ -8,9 +8,10 @@
     require $path_long.'process/new_image.php';
 
     $message = '';
-    $title= $_POST['title'];
     $category= $_POST['category'];
+    $title= $_POST['title'];
     $date_image= $_POST['date_image'];
+    $id_gallery= $_POST['id_gallery'];
     $file_name = $_FILES['image']['name'];
     $file_type = $_FILES['image']['type'];
     $ConditionalFile = "N";
@@ -48,7 +49,7 @@
         }
                 
         //inserta gallery
-        $sql = 'UPDATE gallery SET category = :category, '.$sql_N.', title = :title,date_image= :date_image, where id_gallery = :id_gallery';
+        $sql = "UPDATE gallery SET category = :category, title = :title,date_image= :date_image'.$sql_N.' where id_gallery = :id_gallery";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':category', $category);
         if($ConditionalFile==="Y"){
@@ -67,9 +68,9 @@
             //Eliminar imagen
             delete_image($id_image_D,$name_image,$name_path,$path_long);       
         }       
-        header("Location: ../../../Administrador/index.php");
+        header("Location: ../../../Administrador/gallery.php");
     } else {
-        $message = 'Sorry, those credentials do not match';
+        $message = 'error';
     }
 ?>
              

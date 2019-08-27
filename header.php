@@ -18,7 +18,7 @@
               <ul class="list-inline pull-right flip sm-pull-none sm-text-center mt-5">
                 <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-white"></i> <a class="text-white" href="#">+593 - 22556 - 747</a> </li>
                 <li class="text-white">|</li>
-                <li class="text-white m-0 pl-10 pr-10"> <i class="fa fa-clock-o text-white"></i> Lun-Vie 8:00 to 17:00 </li>
+                <li class="text-white m-0 pl-10 pr-10"> <i class="fa fa-clock-o text-white"></i> Lun-Vie 8:30 to 12:30 </li>
                 <li class="text-white">|</li>
                 <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-white"></i> <a class="text-white" href="mailo:info@camilasalome.org">info@camilasalome.org</a> </li>
               </ul>
