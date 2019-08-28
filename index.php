@@ -102,7 +102,7 @@
               <!-- SLIDE 1 -->
               <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg14.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="imagenes/bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <img src="imagenes/img1.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 <!-- LAYERS -->
 
                 <!-- LAYER NR. 1 -->
@@ -207,7 +207,7 @@
               <!-- SLIDE 2 -->
               <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg6.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="imagenes/bg2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <img src="imagenes/img2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 <!-- LAYERS -->
 
                 <!-- LAYER NR. 1 -->
@@ -416,7 +416,7 @@
         <div class="section-content">
           <div class="row mt-sm-0" data-margin-top="-270px">
             <div class="col-sm-6 col-md-4 maxwidth500 mb-sm-40">
-              <img class="img-fullwidth" src="imagenes/educacion.jpg" alt="">
+              <img class="img-fullwidth" src="imagenes/Aulas.png" alt="">
               <div class="bg-theme-colored text-center border-1px p-20 pt-0">
                 <h3 class="text-white mt-20">Aulas domiciliarias</h3>
                 <p class="text-white">Para niños y adolescentes con cáncer y enfermedades catastróficas.</p>
@@ -424,15 +424,17 @@
               </div>
             </div>
             <div class="col-sm-6 col-md-4 maxwidth500 mb-sm-0">
-              <img class="img-fullwidth" src="imagenes/instituciones.jpg" alt="">
+              <img class="img-fullwidth" src="imagenes/Amigos.png" alt="">
               <div class="text-center border-1px p-20 pt-0" style="background: #7fb03e">
                 <h3 class="text-white mt-20">Amigos de Camila</h3>
-                <p class="text-white">Generar un compromiso y participación activa.</p>
+                <p class="text-white">
+                  Generar un compromiso y participación activa.
+                </p>
                 <a href="apoyoaotrasinstituciones.html" class="btn btn-default">Leer más</a>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 maxwidth500 mb-sm-40">
-              <img class="img-fullwidth" src="imagenes/apoyo.jpg" alt="">
+              <img class="img-fullwidth" src="imagenes/Apoyo.png" alt="">
               <div class="bg-theme-colored text-center border-1px p-20 pt-0">
                 <h3 class="text-white mt-20">Apoyo Socioemocional</h3>
                 <p class="text-white">Apoyo socioemocional para nuestros pacientes estudiantes y sus familias.</p>
@@ -453,15 +455,15 @@
               <div class="row">
                 <div class="col-md-6 col-sm-6 pl-0">
                   <div class="img-hover-border mt-sm-40">
-                    <img class="img-fullwidth" src="imagenes/3.jpg" alt="">
+                    <img class="img-fullwidth" src="imagenes/nosotros3.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 pl-0 pr-0">
                   <div class="img-hover-border mt-sm-30">
-                    <img class="img-fullwidth" src="imagenes/1.jpg" alt="">
+                    <img class="img-fullwidth" src="imagenes/nosotros1.png" alt="">
                   </div>
                   <div class="img-hover-border mt-15 mt-sm-30">
-                    <img class="img-fullwidth" src="imagenes/2.jpg" alt="">
+                    <img class="img-fullwidth" src="imagenes/nosotros2.png" alt="">
                   </div>
                 </div>
               </div>
@@ -480,7 +482,22 @@
     </section>
 
     <!-- Section: Gallery -->
-    <?php  require 'Galeria.php' ?>
+    <section id="gallery">
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="text-uppercase line-bottom-center mt-0" ><span class="font-weight-600">Galería</span></h2>
+              <div class="title-icon">
+                <i class="flaticon-charity-hand-holding-a-heart"></i>
+              </div>
+              <p>Conoce un poco más a nuestros estudiantes y las actividades que realizamos junto a ellos.</p>
+            </div>
+          </div>
+        </div>
+        <?php require 'galeria.php'?>  
+      </div>  
+    </section>  
 
     <!-- Section: blog -->
     <?php
@@ -493,8 +510,6 @@
     ?>
     <!-- Section: blog -->
 
-    
-    
     <!-- Divider: Clients -->
     <section class="clients bg-theme-colored">
       <div class="container pt-0 pb-0">

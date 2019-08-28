@@ -51,9 +51,9 @@
                 <ul class="dropdown">
                   <li><a href="nosotros.html">Nosotros</a></li>
                   <li><a href="historia.html">Historia</a></li>
-                  <li><a href="galeria.html">Galería</a>
+                  <li><a href="galeria1.php">Galería</a>
                   </li>
-                  <li><a href="galeria.html">Resolución</a>
+                  <li><a href="#">Resolución</a>
                   <ul class="dropdown">
                       <li><a href="acuerdos/acuerdo.pdf">Acuerdo</a></li>
                     </ul>
