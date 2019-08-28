@@ -88,7 +88,7 @@
         <div class="section-content pt-100">
           <div class="row"> 
             <div class="col-md-12">
-              <h3 class="title text-white">Aulas Domiciliarias</h3>
+              <h3 class="title text-white">Programa de Sensibilización</h3>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
       <?php 
                   require 'Conexion/conexion.php';
                   $rows = 0;
-                  $stmt = $conn->prepare('SELECT id_gallery, category, image.name as name,title, date_image  FROM gallery inner join image on image.id_image = gallery.id_image where category="Aulas Domiciliarias"');
+                  $stmt = $conn->prepare('SELECT id_gallery, category, image.name as name,title, date_image  FROM gallery inner join image on image.id_image = gallery.id_image where category="Programa de Sensibilización"');
                   $stmt->execute();
                 // $results = $stmt->fetch(PDO::FETCH_ASSOC);
                   echo '<div class="container-fluid ">

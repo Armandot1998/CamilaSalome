@@ -1067,6 +1067,7 @@ section > .container-fluid {
 /* -------- Inner Header ---------- */
 .inner-header .title {
   text-transform: uppercase;
+
 }
 /* -------- Custom theme style ---------- */
 .header-nav .header-nav-wrapper .menuzord {
@@ -1240,6 +1241,8 @@ section > .container-fluid {
 .inner-header .title {
   font-size: 36px;
   text-transform: uppercase;
+  font-family: "Playfair Display";
+
 }
 /*
  *  vertical-nav.less

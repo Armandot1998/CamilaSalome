@@ -229,13 +229,11 @@ html {
       max-width: 100% !important;
     }
     p,
-    h2,
-    h3 {
+    h2 {
       orphans: 3;
       widows: 3;
     }
-    h2,
-    h3 {
+    h2 {
       page-break-after: avoid;
     }
     .navbar {
@@ -1173,13 +1171,11 @@ html {
   }
   h1,
   h2,
-  h3,
   h4,
   h5,
   h6,
   .h1,
   .h2,
-  .h3,
   .h4,
   .h5,
   .h6 {
@@ -1190,25 +1186,21 @@ html {
   }
   h1 small,
   h2 small,
-  h3 small,
   h4 small,
   h5 small,
   h6 small,
   .h1 small,
   .h2 small,
-  .h3 small,
   .h4 small,
   .h5 small,
   .h6 small,
   h1 .small,
   h2 .small,
-  h3 .small,
   h4 .small,
   h5 .small,
   h6 .small,
   .h1 .small,
   .h2 .small,
-  .h3 .small,
   .h4 .small,
   .h5 .small,
   .h6 .small {
@@ -1219,9 +1211,7 @@ html {
   h1,
   .h1,
   h2,
-  .h2,
-  h3,
-  .h3 {
+  .h2 {
     margin-top: 20px;
     margin-bottom: 10px;
   }
@@ -1229,14 +1219,10 @@ html {
   .h1 small,
   h2 small,
   .h2 small,
-  h3 small,
-  .h3 small,
   h1 .small,
   .h1 .small,
   h2 .small,
-  .h2 .small,
-  h3 .small,
-  .h3 .small {
+  .h2 .small {
     font-size: 65%;
   }
   h4,
@@ -1269,11 +1255,7 @@ html {
   h2,
   .h2 {
     font-size: 30px;
-  }
-  h3,
-  .h3 {
-    font-size: 24px;
-  }
+  } 
   h4,
   .h4 {
     font-size: 18px;
@@ -6800,7 +6782,7 @@ html {
 }
 
 .pp-gallery .box figure figcaption {
-  padding: 1em;
+  padding: 0em;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
@@ -6841,7 +6823,7 @@ html {
 }
 
 .pp-gallery figure.pp-effect figcaption {
-  padding: 8px;
+  padding: 2px;
 }
 
 .pp-gallery figure.pp-effect figcaption::before,
@@ -6878,7 +6860,7 @@ html {
 }
 
 .pp-gallery figure.pp-effect .h4 {
-  padding-top: 26%;
+  padding-top: 20%;
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -6924,7 +6906,7 @@ html {
 }
 
 .pp-gallery figure.pp-effect:hover figcaption:before {
-  background: rgba(31, 30, 30, 0.5);
+  background: #c7254d96 ;
 }
 
 .pp-gallery figure.pp-effect:hover .h4,
@@ -6933,6 +6915,8 @@ html {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   color: #FFFFFF;
+  font : oblique bold 120% cursive;
+  font-style: oblique;
 }
 
 .pp-gallery figure.pp-effect:hover figcaption::after,

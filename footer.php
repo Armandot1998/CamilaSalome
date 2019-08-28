@@ -48,7 +48,8 @@
           <div class="col-md-6 text-right">
             <div class="widget no-border m-0">
               <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm">
-              <li><a href="https://www.facebook.com/fundacioncamilasalome" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/fundcamilasalome?igshid=1t9825apy9den" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/fundacioncamilasalome" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/Funcamilasalome" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCPO9Ep5Yv2ty0J7bj0GSpMQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
             </ul>
