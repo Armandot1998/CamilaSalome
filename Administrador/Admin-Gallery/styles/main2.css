@@ -6791,7 +6791,7 @@ html {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   color: #FFFFFF;
-  font : oblique bold 120% cursive;
+  font : oblique bold 80% cursive;
   font-style: oblique;
 }
 
@@ -6816,7 +6816,6 @@ html {
     font-size: 16px;
   }
 }
-
 img.zoom {
   width: 100%;
   height: 290px;

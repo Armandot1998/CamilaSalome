@@ -92,7 +92,7 @@ li a {
                 </div>
                 <div class="col-md-8">
                     <div class="panel-body">
-                    <form role="form" action="./crud/update_gallery.php" method="post" enctype="multipart/form-data"  id="frm_Gallery">
+                    <form role="form" action="crud/update_gallery.php" method="post" enctype="multipart/form-data"  id="frm_Gallery">
                             <div class="col-md-12">
                                 <div class="col-md-4">
                                 </div>

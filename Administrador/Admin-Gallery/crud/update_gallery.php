@@ -7,11 +7,11 @@
     require $path_long.'Conexion/conexion.php';
     require $path_long.'process/new_image.php';
 
-    $message = '';
+    $$message = '';
+    $id_gallery = $_POST['id_gallery'];
     $category= $_POST['category'];
     $title= $_POST['title'];
     $date_image= $_POST['date_image'];
-    $id_gallery= $_POST['id_gallery'];
     $file_name = $_FILES['image']['name'];
     $file_type = $_FILES['image']['type'];
     $ConditionalFile = "N";
@@ -49,14 +49,14 @@
         }
                 
         //inserta gallery
-        $sql = "UPDATE gallery SET category = :category, title = :title,date_image= :date_image'.$sql_N.' where id_gallery = :id_gallery";
+        $sql = 'UPDATE gallery SET title = :title, date_image= :date_image,category = :category '.$sql_N.' where id_gallery = :id_gallery';
         $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':title', $title);
         $stmt->bindParam(':category', $category);
+        $stmt->bindParam(':date_image', $date_image);
         if($ConditionalFile==="Y"){
             $stmt->bindParam(':id_image', $id_image);
         }
-        $stmt->bindParam(':title', $title);
-        $stmt->bindParam(':date_image', $date_image);
         $stmt->bindParam(':id_gallery', $id_gallery);
 
         if ($stmt->execute()) {
@@ -70,7 +70,6 @@
         }       
         header("Location: ../../../Administrador/gallery.php");
     } else {
-        $message = 'error';
+        $message = 'Sorry, those credentials do not match';
     }
 ?>
-             

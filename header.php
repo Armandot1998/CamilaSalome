@@ -29,7 +29,7 @@
               <ul class="list-inline pull-right flip sm-pull-none sm-text-center mt-5">
                 <li class="mt-sm-10 mb-sm-10">
                   <!-- Modal: Appointment Starts -->
-                  <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10" href="donaciones.html">Donar</a>
+                  <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10" href="donaciones.php">Donar</a>
                   <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10" href="voluntariado.php">Voluntariado</a>
                 </li>
                 </li>
@@ -47,10 +47,10 @@
             <ul class="menuzord-menu">
               <li class="active"><a href="index.php">Inicio</a>
               </li>
-              <li><a href="#">La Organización</a>
+              <li><a href="#about">La Organización</a>
                 <ul class="dropdown">
-                  <li><a href="nosotros.html">Nosotros</a></li>
-                  <li><a href="historia.html">Historia</a></li>
+                  <li><a href="nosotros.php">Nosotros</a></li>
+                  <li><a href="historia.php">Historia</a></li>
                   <li><a href="galeria1.php">Galería</a>
                   </li>
                   <li><a href="#">Resolución</a>
@@ -60,25 +60,28 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="#">Programas</a>
+              <li><a href="#home">Programas</a>
                 <ul class="dropdown">
-                  <li><a href="educacion.html">Aulas domiciliarias</a></li>
-                  <li><a href="apoyosocioemocional.html">Apoyo Socioemocional</a></li>                  
-                  <li><a href="apoyoaotrasinstituciones.html">Sensibilización Amigos de Camila</a></li>
+                  <li><a href="educacion.php">Aulas domiciliarias</a></li>
+                  <li><a href="apoyosocioemocional.php">Apoyo Socioemocional</a></li>                  
+                  <li><a href="apoyoaotrasinstituciones.php">Sensibilización Amigos de Camila</a></li>
                 </ul>
               </li>
               <li><a href="#">Tu Ayuda</a>
                 <ul class="dropdown">
                   <li><a href="voluntariado.php">Voluntariado</a>
                   </li>
-                  <li><a href="donaciones.html">Donaciones</a>
-                  </li>
-                  <li><a href="tienda.html">Tienda</a>
+                  <li><a href="donaciones.php">Donaciones</a>
                   </li>
                 </ul>
               </li>
-              <li><a href="blog.php">Blog</a></li>
-              <li><a href="contactos.html">Contactos</a></li>
+              <li><a href="#blog">Blog</a>
+                <ul class="dropdown">
+                <li><a href="blog.php">Noticias</a>
+                <li><a href="historia1.php">Historias de vida</a>
+                </ul>
+              </li>
+              <li><a href="contactos.php">Contactos</a></li>
             </ul>
           </nav>
         </div>

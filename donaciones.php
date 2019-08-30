@@ -27,7 +27,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 
 <!-- Page Title -->
-<title>Fundación Camila Salome - Historia</title>
+<title>Fundación Camila Salomé - Donaciones</title>
 
 <!-- Stylesheet -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -74,97 +74,55 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div id="wrapper" class="clearfix">
-  
+   
   <!-- Header -->
-  <?php require 'header.php '?>
+  <?php require 'header.php' ?>
   
   <!-- Start main-content -->
   <div class="main-content">
 
     <!-- Section: inner-header -->
-    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="imagenes/fondo.jpg">
-      <div class="container pt-100 pb-50">
+    <section class="inner-header divider parallax layer-overlay overlay-dark-6" data-bg-img="imagenes/donaciones.jpg">
+      <div class="container pt-60 pb-60">
         <!-- Section Content -->
-        <div class="section-content pt-100">
-          <div class="row"> 
-            <div class="col-md-12">
-              <h3 class="title text-white">NUESTRA HISTORIA</h3>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="title text-white">DONACIONES</h3>
+              <ol class="breadcrumb text-center text-black mt-10">
+                <li><a href="index.php">Inicio</a></li>
+                <li class="active text-theme-colored">Formas de Donar</li>
+              </ol>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section: -->
     <section>
       <div class="container">
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-8">
-              <h3 class="text-uppercase font-24" align="justify">La Fundación <span class="text-theme-colored">Camila Salomé,</span> nace como iniciativa de dos padres que perdieron a su única hija producto de un Glioma cerebral.</h3>
-              <h5 class="text-uppercase text-theme-colored font-weight-400"> </h5>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <p align="justify">Camila Salomé fue una niña alegre y feliz hasta que en agosto del 2012 a sus 14 años de edad fue diagnosticada de un glioma cerebral, un cáncer sumamente agresivo. Los tratamientos de radioterapia y la medicación que tomaba provocaron un cambio drástico en su apariencia física y además disminuyó su capacidad intelectual debido a su enfermedad.</p>
-                </div> 
-                <div class="col-md-6">
-                  <p align="justify">Víctima de la enfermedad del siglo XXI y de la insolidaridad humana, falleció luego de dos años de lucha diaria.</p>
-                </div>    
-                <div class="col-md-6">
-                  <p align="justify">Camila Salomé fue una guerrera incansable, día a día luchó por seguir adelante, luchó con sus dolencias, con la insensibilidad de la gente, luchó por la vida. Ella nos dio muestras de valentía, de madurez, de alegría, solidaridad y fortaleza.</p>
-                </div>           
-                
-              </div>
-              
-              <div class="row">
-                <div class="col-md-6">
-                  <p align="justify">El mayor deseo de Camila Salomé fue seguir con sus estudios, pero debido a la falta de sensibilidad y desconocimiento de lo que provoca el cáncer, fue rechazada por algunas instituciones educativas y, fue discriminada por sus propios compañeros y amigos del colegio. Camila Salomé no pudo continuar sus estudios en el programa normal y su madre tuvo que convertirse en su maestra y cumplirle su sueño de seguir estudiando. No hubo solidaridad social.</p>
-                </div>
-                
-                
-                <div class="col-md-6">
-                  <p align="justify">En homenaje a nuestra hija inolvidable nace la Fundación “Camila Salomé” para ayudar a niños, niñas y adolescentes con cáncer. Fue su sueño y ella desde el cielo estará pendiente de que lo cumplamos y será para su regocijo, paz y tranquilidad.</p>
-                </div>
-              </div>
-              
-            </div>
-            <div class="col-md-4">
-              <div class="thumb">
-                <img alt="" src="imagenes/icono.jpg" class="img-fullwidth">
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-md-6 col-md-push-3">
+            <h4 class="mt-0 pt-5">Gracias por ser parte de nuestros sueños</h4>
+            <hr>           
+            <p>A la cuenta del Banco Pichincha:</p>
+            <h5>Número de Cuenta: 21001287-47</h5>
+            <h5>Tipo: Cuenta Corriente</h5>
+            <h5>Nombre: Fundación Camila Salomé</h5>
+            <h5>RUC: 1792686164001</h5>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="QXTKVCM9N59WE">
+<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
           </div>
-          
-          <br><br><div class="row">
-           <div class="col-md-4">
-              <div class="thumb">
-                <img alt="" src="imagenes/retrato.jpg" class="img-fullwidth">
-              </div>
-            </div>
-            <div class="col-md-8">
-              
-              <div class="row">
-              <h3 class="text-uppercase font-24">HISTORIA DEL LOGOTIPO</h3>
-                <div class="col-md-6">
-                  <p align="justify">La imagen de lo que es hoy el logotipo de la Fundación Camila Salomé, es una creación personal de Camila Salomé, con la que participó en un concurso de pintura para niños, niñas y adolescentes con cáncer organizado por la Fundación de Ayuda para Niños y Adolescentes con Cáncer (FANAC) y obtuvo el segundo lugar.</p>
-                </div> 
-                <div class="col-md-6">
-                  <p align="justify">Cuando desarrollamos el Proyecto de la Fundación y creamos una página de Facebook para publicar los avances y la ayuda que brindábamos en ese momento, fue necesario crear una imagen que nos identifique y decidimos tomar la pintura realizada por Camilita, ya que además de gustarnos, es una creación de nuestra hija. Esta imagen luego fue retocada por la Diseñadora Gráfica Paulina Enriquez y se convirtió en el logotipo de la Fundación.</p>
-                </div>    
-                
-              </div>
-              
-            </div>
-          </div>
-          
         </div>
       </div>
-    </section>    
-
+    </section>
   </div>
   <!-- end main-content -->
-  
+
   <!-- Footer -->
   <?php require 'footer.php' ?>
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>

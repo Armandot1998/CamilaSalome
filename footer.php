@@ -16,9 +16,9 @@
           <div class="widget dark">
             <h5 class="widget-title line-bottom">Programas</h5>
             <ul class="list angle-double-right list-border">
-              <li><a href="educacion.html">Aulas domiciliarias</a></li>
-              <li><a href="apoyosocioemocional.html">Apoyo Socioemocional</a></li>
-              <li><a href="apoyoinstitucional.html">Amigos de Camila</a></li>   
+              <li><a href="educacion.php">Aulas domiciliarias</a></li>
+              <li><a href="apoyosocioemocional.php">Apoyo Socioemocional</a></li>
+              <li><a href="apoyoinstitucional.php">Amigos de Camila</a></li>   
             </ul>
           </div>
         </div>
@@ -26,10 +26,10 @@
           <div class="widget dark">
             <h5 class="widget-title line-bottom">Información</h5>
             <ul class="list angle-double-right list-border">
-              <li><a href="codigodeetica.html">Código de Ética</a></li>
-              <li><a href="transparencia.html">Transparencia</a></li>
-              <li><a href="donaciones.html">Donaciones</a></li> 
-              <li><a href="voluntariado.html">Voluntariado</a></li>   
+              <li><a href="codigodeetica.php">Código de Ética</a></li>
+              <li><a href="transparencia.php">Transparencia</a></li>
+              <li><a href="donaciones.php">Donaciones</a></li> 
+              <li><a href="voluntariado.php">Voluntariado</a></li>   
             </ul>
           </div>
         </div>
@@ -43,7 +43,7 @@
       <div class="container pt-15 pb-10">
         <div class="row">
           <div class="col-md-6">
-            <p class="font-11 text-black-777 m-0 text-white"> Derechos Reservados - Diseñado por: <a href="http://www.agmediaestudio.com" target="_blank" class="text-white">AG MediaEstudio</a></p>
+            <p class="font-11 text-black-777 m-0 text-white"> Derechos Reservados - Actualizado por: YAVIRAC Developers </p>
           </div>
           <div class="col-md-6 text-right">
             <div class="widget no-border m-0">

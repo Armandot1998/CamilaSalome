@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
 <!-- Meta Tags -->
@@ -27,7 +26,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 
 <!-- Page Title -->
-<title>Fundación Camila Salome - Historia</title>
+<title>Fundacion Camila Salome - Contactos</title>
 
 <!-- Stylesheet -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -74,21 +73,21 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div id="wrapper" class="clearfix">
-  
+
   <!-- Header -->
-  <?php require 'header.php '?>
+  <?php require 'header.php' ?>
   
   <!-- Start main-content -->
   <div class="main-content">
 
     <!-- Section: inner-header -->
-    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="imagenes/fondo.jpg">
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="imagenes/contacto.jpg">
       <div class="container pt-100 pb-50">
         <!-- Section Content -->
         <div class="section-content pt-100">
           <div class="row"> 
             <div class="col-md-12">
-              <h3 class="title text-white">NUESTRA HISTORIA</h3>
+              <h3 class="title text-white">CONTACTOS</h3>
             </div>
           </div>
         </div>
@@ -99,74 +98,64 @@
     <section>
       <div class="container">
         <div class="section-content">
+        <div class="section-title text-center">
           <div class="row">
-            <div class="col-md-8">
-              <h3 class="text-uppercase font-24" align="justify">La Fundación <span class="text-theme-colored">Camila Salomé,</span> nace como iniciativa de dos padres que perdieron a su única hija producto de un Glioma cerebral.</h3>
-              <h5 class="text-uppercase text-theme-colored font-weight-400"> </h5>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <p align="justify">Camila Salomé fue una niña alegre y feliz hasta que en agosto del 2012 a sus 14 años de edad fue diagnosticada de un glioma cerebral, un cáncer sumamente agresivo. Los tratamientos de radioterapia y la medicación que tomaba provocaron un cambio drástico en su apariencia física y además disminuyó su capacidad intelectual debido a su enfermedad.</p>
-                </div> 
-                <div class="col-md-6">
-                  <p align="justify">Víctima de la enfermedad del siglo XXI y de la insolidaridad humana, falleció luego de dos años de lucha diaria.</p>
-                </div>    
-                <div class="col-md-6">
-                  <p align="justify">Camila Salomé fue una guerrera incansable, día a día luchó por seguir adelante, luchó con sus dolencias, con la insensibilidad de la gente, luchó por la vida. Ella nos dio muestras de valentía, de madurez, de alegría, solidaridad y fortaleza.</p>
-                </div>           
-                
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="text-uppercase line-bottom-center mt-0" style="color: #7fb03e;  font-family: 'Playfair Display', serif;"><span class="font-weight-600">COMUNÍCATE CON NOSOTROS</span></h2>
+              <div class="title-icon">
+                <i class="flaticon-charity-hand-holding-a-heart"></i>
               </div>
-              
-              <div class="row">
-                <div class="col-md-6">
-                  <p align="justify">El mayor deseo de Camila Salomé fue seguir con sus estudios, pero debido a la falta de sensibilidad y desconocimiento de lo que provoca el cáncer, fue rechazada por algunas instituciones educativas y, fue discriminada por sus propios compañeros y amigos del colegio. Camila Salomé no pudo continuar sus estudios en el programa normal y su madre tuvo que convertirse en su maestra y cumplirle su sueño de seguir estudiando. No hubo solidaridad social.</p>
-                </div>
-                
-                
-                <div class="col-md-6">
-                  <p align="justify">En homenaje a nuestra hija inolvidable nace la Fundación “Camila Salomé” para ayudar a niños, niñas y adolescentes con cáncer. Fue su sueño y ella desde el cielo estará pendiente de que lo cumplamos y será para su regocijo, paz y tranquilidad.</p>
+              <p>Por favor coméntanos como podemos ayudarte, ¡estamos aquí para ti!</p>
+            </div>
+          </div>
+        </div>
+          
+          <div class="row mt-40">
+            <div class="col-md-4">
+              <div class="icon-box p-0">
+                <a class="icon-border-effect effect-circled  icon icon-circled mb-0 mr-0 pull-left icon-lg" href="#">
+                  <i class="fa fa-map text-theme-colored font-54"></i>
+                </a>
+                <div class="ml-120">
+                  <h5 class="icon-box-title mt-15 mb-10 text-uppercase" align="center">DIRECCIÓN:</h5>
+                  <p class="text-gray" align="center">Yánez Pinzón N26-56 entre <br>Av. Colón y La Niña <br>Edificio Frago, Oficina 1 <br>Quito – Ecuador</p>
                 </div>
               </div>
-              
             </div>
             <div class="col-md-4">
-              <div class="thumb">
-                <img alt="" src="imagenes/icono.jpg" class="img-fullwidth">
+              <div class="icon-box p-0">
+                <a class="icon-border-effect effect-circled  icon icon-circled mb-0 mr-0 pull-left icon-lg" href="#">
+                  <i class="fa fa-phone text-theme-colored font-54"></i>
+                </a>
+                <div class="ml-120">
+                  <h5 class="icon-box-title mt-15 mb-10 text-uppercase" align="center">TELÉFONOS:</h5>
+                  <p class="text-gray" align="center">+593 - 22556 - 747 <br>+593 - 22491 - 508 <br>+593 - 9844 - 49329</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box p-0">
+                <a class="icon-border-effect effect-circled  icon icon-circled mb-0 mr-0 pull-left icon-lg" href="#">
+                  <i class="fa fa-envelope-o text-theme-colored font-54"></i>
+                </a>
+                <div class="ml-120">
+                  <h5 class="icon-box-title mt-15 mb-10 text-uppercase" align="center">EMAIL</h5>
+                  <p class="text-gray" align="center"><a href="mailto:info@camilasalome.org">info@camilasalome.org</a> <br><a href="mailto:rociozapatab@camilasalome.org">rociozapatab@camilasalome.org</a></p>
+                </div>
               </div>
             </div>
           </div>
-          
-          <br><br><div class="row">
-           <div class="col-md-4">
-              <div class="thumb">
-                <img alt="" src="imagenes/retrato.jpg" class="img-fullwidth">
-              </div>
-            </div>
-            <div class="col-md-8">
-              
-              <div class="row">
-              <h3 class="text-uppercase font-24">HISTORIA DEL LOGOTIPO</h3>
-                <div class="col-md-6">
-                  <p align="justify">La imagen de lo que es hoy el logotipo de la Fundación Camila Salomé, es una creación personal de Camila Salomé, con la que participó en un concurso de pintura para niños, niñas y adolescentes con cáncer organizado por la Fundación de Ayuda para Niños y Adolescentes con Cáncer (FANAC) y obtuvo el segundo lugar.</p>
-                </div> 
-                <div class="col-md-6">
-                  <p align="justify">Cuando desarrollamos el Proyecto de la Fundación y creamos una página de Facebook para publicar los avances y la ayuda que brindábamos en ese momento, fue necesario crear una imagen que nos identifique y decidimos tomar la pintura realizada por Camilita, ya que además de gustarnos, es una creación de nuestra hija. Esta imagen luego fue retocada por la Diseñadora Gráfica Paulina Enriquez y se convirtió en el logotipo de la Fundación.</p>
-                </div>    
-                
-              </div>
-              
-            </div>
-          </div>
-          
         </div>
       </div>
-    </section>    
+    </section>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.793855994024!2d-78.48851148478208!3d-0.20064489985360104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a72a13db9e5%3A0xd0cc54826093934d!2sMinisterio+de+Industrias+y+Productividad!5e0!3m2!1ses-419!2sec!4v1525406386719" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
   </div>
   <!-- end main-content -->
   
   <!-- Footer -->
-  <?php require 'footer.php' ?>
+  <?Php require 'footer.php' ?>
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 </div>
 <!-- end wrapper -->

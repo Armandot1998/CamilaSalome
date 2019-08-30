@@ -27,7 +27,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 
 <!-- Page Title -->
-<title>Fundación Camila Salome - Historia</title>
+<title>Fundación Camila Salome - Codigo de etica</title>
 
 <!-- Stylesheet -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -76,7 +76,7 @@
 <div id="wrapper" class="clearfix">
   
   <!-- Header -->
-  <?php require 'header.php '?>
+  <?php  require 'header.php'?>
   
   <!-- Start main-content -->
   <div class="main-content">
@@ -88,7 +88,7 @@
         <div class="section-content pt-100">
           <div class="row"> 
             <div class="col-md-12">
-              <h3 class="title text-white">NUESTRA HISTORIA</h3>
+              <h3 class="title text-white">NUESTRO CODIGO DE ETICA</h3>
             </div>
           </div>
         </div>
@@ -99,62 +99,24 @@
     <section>
       <div class="container">
         <div class="section-content">
-          <div class="row">
-            <div class="col-md-8">
-              <h3 class="text-uppercase font-24" align="justify">La Fundación <span class="text-theme-colored">Camila Salomé,</span> nace como iniciativa de dos padres que perdieron a su única hija producto de un Glioma cerebral.</h3>
-              <h5 class="text-uppercase text-theme-colored font-weight-400"> </h5>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <p align="justify">Camila Salomé fue una niña alegre y feliz hasta que en agosto del 2012 a sus 14 años de edad fue diagnosticada de un glioma cerebral, un cáncer sumamente agresivo. Los tratamientos de radioterapia y la medicación que tomaba provocaron un cambio drástico en su apariencia física y además disminuyó su capacidad intelectual debido a su enfermedad.</p>
-                </div> 
-                <div class="col-md-6">
-                  <p align="justify">Víctima de la enfermedad del siglo XXI y de la insolidaridad humana, falleció luego de dos años de lucha diaria.</p>
-                </div>    
-                <div class="col-md-6">
-                  <p align="justify">Camila Salomé fue una guerrera incansable, día a día luchó por seguir adelante, luchó con sus dolencias, con la insensibilidad de la gente, luchó por la vida. Ella nos dio muestras de valentía, de madurez, de alegría, solidaridad y fortaleza.</p>
-                </div>           
-                
-              </div>
-              
-              <div class="row">
-                <div class="col-md-6">
-                  <p align="justify">El mayor deseo de Camila Salomé fue seguir con sus estudios, pero debido a la falta de sensibilidad y desconocimiento de lo que provoca el cáncer, fue rechazada por algunas instituciones educativas y, fue discriminada por sus propios compañeros y amigos del colegio. Camila Salomé no pudo continuar sus estudios en el programa normal y su madre tuvo que convertirse en su maestra y cumplirle su sueño de seguir estudiando. No hubo solidaridad social.</p>
-                </div>
-                
-                
-                <div class="col-md-6">
-                  <p align="justify">En homenaje a nuestra hija inolvidable nace la Fundación “Camila Salomé” para ayudar a niños, niñas y adolescentes con cáncer. Fue su sueño y ella desde el cielo estará pendiente de que lo cumplamos y será para su regocijo, paz y tranquilidad.</p>
-                </div>
-              </div>
-              
+          <div class="row mt-30 mb-20 pt-10 pb-20 pl-10 pr-10">
+            <div class="col-md-6">
+              <p align="justify">Busca normar el comportamiento de todos los empleados y colaboradores, basados en principios y valores que rigen el quehacer diario de la Fundación Camila Salomé.</p>
+              <p align="justify">Este código pone de manifiesto los principios con los que todos los empleados y colaboradores de la Fundación deben realizar su trabajo e interacciones diarias.</p>
+              <p align="justify">Los empleados y colaboradores de Fundación Camila Salomé deben cumplir la misión de la Organización así como los objetivos establecidos, se comprometen a respetar los lineamientos establecidos en este código de ética:</p>
             </div>
-            <div class="col-md-4">
-              <div class="thumb">
-                <img alt="" src="imagenes/icono.jpg" class="img-fullwidth">
-              </div>
-            </div>
-          </div>
-          
-          <br><br><div class="row">
-           <div class="col-md-4">
-              <div class="thumb">
-                <img alt="" src="imagenes/retrato.jpg" class="img-fullwidth">
-              </div>
-            </div>
-            <div class="col-md-8">
-              
-              <div class="row">
-              <h3 class="text-uppercase font-24">HISTORIA DEL LOGOTIPO</h3>
-                <div class="col-md-6">
-                  <p align="justify">La imagen de lo que es hoy el logotipo de la Fundación Camila Salomé, es una creación personal de Camila Salomé, con la que participó en un concurso de pintura para niños, niñas y adolescentes con cáncer organizado por la Fundación de Ayuda para Niños y Adolescentes con Cáncer (FANAC) y obtuvo el segundo lugar.</p>
-                </div> 
-                <div class="col-md-6">
-                  <p align="justify">Cuando desarrollamos el Proyecto de la Fundación y creamos una página de Facebook para publicar los avances y la ayuda que brindábamos en ese momento, fue necesario crear una imagen que nos identifique y decidimos tomar la pintura realizada por Camilita, ya que además de gustarnos, es una creación de nuestra hija. Esta imagen luego fue retocada por la Diseñadora Gráfica Paulina Enriquez y se convirtió en el logotipo de la Fundación.</p>
-                </div>    
-                
-              </div>
-              
+            <div class="col-md-6">
+              <ul class="list theme-colored check ml-20">
+                <li>Cumplimiento de la Misión</li>
+                <li>Compromiso e identidad con la institución.</li>
+                <li>Respeto y honestidad en las relaciones y desempeño laborales.</li>
+                <li>Transparencia en el manejo financiero</li>
+                <li>Relaciones con Instituciones Educativas, Médicas y Organizaciones de manera profesional y cordial</li>
+                <li>Compromiso con la seguridad de los empleados, colaboradores y pacientes de la Organización</li>
+                <li>Resguardo de Información confidencial interna y externa</li>
+                <li>Cumplimiento de leyes</li>
+                <li>Cumplimiento de las regulaciones establecidas por la Fundación</li>
+              </ul>
             </div>
           </div>
           
@@ -166,7 +128,7 @@
   <!-- end main-content -->
   
   <!-- Footer -->
-  <?php require 'footer.php' ?>
+  <?php require 'footer.php'?>
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 </div>
 <!-- end wrapper -->

@@ -37,7 +37,7 @@
             <div class="section-title text-center">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
-                        <h2 class="text-uppercase line-bottom-center mt-0" style="color: #7fb03e"><span class="font-weight-600">Noticias</span></h2>
+                        <h2 class="text-uppercase line-bottom-center mt-0" style="color: #7fb03e; font-family: Playfair Display, serif;"><span class="font-weight-600">Noticias</span></h2>
                         <div class="title-icon">
                             <i class="flaticon-charity-hand-holding-a-heart"></i>
                         </div>

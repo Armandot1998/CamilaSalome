@@ -163,10 +163,8 @@ h6,
 .h6 {
   font-size: 12px;
 }
-h1,
-h2,
-.h1,
-.h2 {
+h1
+.h1{
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   line-height: 1.42857143;
@@ -4096,7 +4094,7 @@ table.no-border td {
   font-size: 28px;
 }
 .post .entry-meta.meta-absolute span a {
-  color: #454545;
+  color: #7FB03E;
   font-size: 12px;
   font-style: italic;
   letter-spacing: 2px;

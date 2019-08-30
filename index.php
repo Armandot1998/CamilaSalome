@@ -200,7 +200,7 @@
                   data-splitin="none" 
                   data-splitout="none" 
                   data-responsive_offset="on"
-                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-default btn-circled btn-transparent pl-20 pr-20" href="historia.html">Leer más</a> 
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-default btn-circled btn-transparent pl-20 pr-20" href="historia.php">Leer más</a> 
                 </div>
               </li>
 
@@ -304,7 +304,7 @@
                   data-splitin="none" 
                   data-splitout="none" 
                   data-responsive_offset="on"
-                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-theme-colored pl-20 pr-20" href="educacion.html">Leer más</a> 
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-theme-colored pl-20 pr-20" href="educacion.php">Leer más</a> 
                 </div>
               </li>
 
@@ -411,7 +411,7 @@
     </section>
 
     <!-- Section: home-box -->
-    <section>
+    <section id="home">
       <div class="container pb-0">
         <div class="section-content">
           <div class="row mt-sm-0" data-margin-top="-270px">
@@ -420,7 +420,7 @@
               <div class="bg-theme-colored text-center border-1px p-20 pt-0">
                 <h3 class="text-white mt-20">Aulas domiciliarias</h3>
                 <p class="text-white">Para niños y adolescentes con cáncer y enfermedades catastróficas.</p>
-                <a href="educacion.html" class="btn btn-default">Leer más</a>
+                <a href="educacion.php" class="btn btn-default">Leer más</a>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 maxwidth500 mb-sm-0">
@@ -430,7 +430,7 @@
                 <p class="text-white">
                   Generar un compromiso y participación activa.
                 </p>
-                <a href="apoyoaotrasinstituciones.html" class="btn btn-default">Leer más</a>
+                <a href="apoyoinstitucional.php" class="btn btn-default">Leer más</a>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 maxwidth500 mb-sm-40">
@@ -438,7 +438,7 @@
               <div class="bg-theme-colored text-center border-1px p-20 pt-0">
                 <h3 class="text-white mt-20">Apoyo Socioemocional</h3>
                 <p class="text-white">Apoyo socioemocional para nuestros pacientes estudiantes y sus familias.</p>
-                <a href="apoyosocioemocional.html" class="btn btn-default">Leer más</a>
+                <a href="apoyosocioemocional.php" class="btn btn-default">Leer más</a>
               </div>
             </div>
           </div>
@@ -470,10 +470,10 @@
             </div>
             <div class="col-md-6">
               <div class="about-details">
-                <h2 class="font-36 mt-0"> SOBRE <span class="text-theme-colored">NOSOTROS</span></h2>
+                <h2 class="font-36 mt-0" style="font-family: 'Playfair Display', serif; font-weight: 600; line-height: 1.42857143; color: #333333;"> SOBRE <span class="text-theme-colored" style="font-family: 'Playfair Display', serif;font-weight: 600;line-height: 1.42857143;color: #333333;">NOSOTROS</span></h2>
                 <p align="justify">Somos una Organización sin fines de lucro <strong>aprobada mediante Resolución N°319 MINEDUC SEDMQ-2016 del Ministerio de Educación del Ecuador</strong>, dedicada a la “Atención Educativa Domiciliaria para Estudiantes con cáncer y enfermedades catastróficas en la ciudad de Quito”, programa que busca ayudar a los niños, niñas y adolescentes que por su situación de enfermedad no pueden asistir a su institución educativa de origen y no están hospitalizados, para que tengan continuidad en sus estudios y sea fácil su reincorporación escolar; prestamos además ayuda socioemocional a los niños y sus familias.</p>
                 <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
-                <a href="historia.html" class="btn btn-flat btn-colored btn-theme-colored mt-15 mr-15">CONOCE NUESTRA HISTORIA</a>                
+                <a href="historia.php" class="btn btn-flat btn-colored btn-theme-colored mt-15 mr-15">CONOCE NUESTRA HISTORIA</a>                
               </div>
             </div>
           </div>
@@ -487,7 +487,7 @@
         <div class="section-title text-center">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <h2 class="text-uppercase line-bottom-center mt-0" ><span class="font-weight-600">Galería</span></h2>
+              <h2 class="text-uppercase line-bottom-center mt-0" style="color: #7fb03e; font-family: 'Playfair Display', serif;"><span class="font-weight-600" >Galería</span></h2>
               <div class="title-icon">
                 <i class="flaticon-charity-hand-holding-a-heart"></i>
               </div>
