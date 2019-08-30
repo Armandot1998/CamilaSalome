@@ -102,20 +102,31 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-push-3">
-            <h4 class="mt-0 pt-5">Gracias por ser parte de nuestros sueños</h4>
-            <hr>           
+          <div class="col-md-6 col-md-push-3" style="line-height: 1.42857143;font-weight: 600">
+            <b style="color: #000000">Con tu aporte garantizamos el derecho a la educación de niños, niñas y adolescentes con cáncer.</b>
+            <hr>   
+            <h2 class="mt-0 pt-5" style= "color: #EC2C64">Cómo ayudar</h2>   
+            <br>  
+            <h4 style="color: #000000">Transferencia Bancaria</h4>
             <p>A la cuenta del Banco Pichincha:</p>
-            <h5>Número de Cuenta: 21001287-47</h5>
-            <h5>Tipo: Cuenta Corriente</h5>
-            <h5>Nombre: Fundación Camila Salomé</h5>
-            <h5>RUC: 1792686164001</h5>
+            <p><b>Número de Cuenta:</b> 21001287-47</p>
+            <p><b>Tipo:</b> Cuenta Corriente</p>
+            <p><b>Nombre:</b> Fundación Camila Salomé</p>
+            <p><b>RUC:</b> 1792686164001</p>
+            <br>
+            <h4 style="color: #000000">Pago recurrente con tarjeta de crédito</h4>
+            <p>Mediante visitas a domicilio o empresa:</p>
+            <p><b>Contacto:</b> 2556 747 / 099 8311 371</p>
+            <br>
+            <h4 style="color: #000000">Donación directa mediante PayPal</h4>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="QXTKVCM9N59WE">
-<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-</form>
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="QXTKVCM9N59WE">
+              <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            <hr>
+            <h4 class="mt-0 pt-5" style= "color: #EC2C64">Gracias por ser parte de este sueño</h3>   
           </div>
         </div>
       </div>

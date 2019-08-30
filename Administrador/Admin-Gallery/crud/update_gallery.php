@@ -7,7 +7,7 @@
     require $path_long.'Conexion/conexion.php';
     require $path_long.'process/new_image.php';
 
-    $$message = '';
+    $message = '';
     $id_gallery = $_POST['id_gallery'];
     $category= $_POST['category'];
     $title= $_POST['title'];
