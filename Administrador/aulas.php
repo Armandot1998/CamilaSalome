@@ -37,10 +37,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </head>
 <style>
-
 img.zoom {
     width: 100%;
-    height: 290px;
+    height: 200px;
     border-radius:5px;
     object-fit:cover;
     -webkit-transition: all .3s ease-in-out;
@@ -86,10 +85,10 @@ img.zoom {
   <br>
   <?php 
                 $rows = 0;
-                $stmt = $conn->prepare('SELECT id_gallery, category, image.name as name,title, date_image  FROM gallery inner join image on image.id_image = gallery.id_image where category="Aulas Domiciliarias"');
+                $stmt = $conn->prepare('SELECT id_gallery, category, image.name as name,title, date_image  FROM gallery inner join image on image.id_image = gallery.id_image where category="Programa de Sencibilización"');
                 $stmt->execute();
                // $results = $stmt->fetch(PDO::FETCH_ASSOC);
-                echo '<div class="container-fluid ">
+                echo '<div class="container-fluid mt-40">
                 ';
                 while($results = $stmt->fetch(PDO::FETCH_ASSOC)){
 
@@ -97,13 +96,13 @@ img.zoom {
                         if($rows==0){
                             echo ' 
                             <div class="row">
-                            <div class="col-md-12 ">
+                            <div class="col-md-10 ">
                             <div class="row">
                             ';
                         }
                         echo '
                         <div class="col-md-4  pp-gallery ">
-                          <div  class="box">
+                          <div class="box">
                             <a href="../Imagenes/Gallery-Img/'.$results['name'].'" class="fancybox" rel="ligthbox">
                               <figure class="pp-effect">
                                 <img class="zoom img-fluid"  src="../Imagenes/Gallery-Img/'.$results['name'].'" alt="">
