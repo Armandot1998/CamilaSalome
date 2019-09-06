@@ -76,7 +76,7 @@
 <div id="wrapper" class="clearfix">
   
   <!-- Header -->
-  <?php require 'header.php '?>
+  <?php require './header.php'?>
   
   <!-- Start main-content -->
   <div class="main-content">

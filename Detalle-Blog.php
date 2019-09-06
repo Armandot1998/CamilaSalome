@@ -61,7 +61,7 @@
       <div id="wrapper" class="clearfix">
       <?php require'header.php'; ?>
       <div class="main-content">
-        <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="magenes/Nosotros.jpg">
+      <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="imagenes/blog.jpg">
           <div class="container pt-100 pb-50">
             <div class="section-content pt-100">
               <div class="row">

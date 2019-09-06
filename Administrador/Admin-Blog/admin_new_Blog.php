@@ -40,84 +40,68 @@
 			});
 		});	
 	</script>
-    <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-</style>
 </head>
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-2">
                     </div>
-                    <div class="col-md-8" >
-                    <div class="panel-body">
-                    <form role="form" action="./process/new_blog.php" method="post" enctype="multipart/form-data"  id="frm_Blog">
+                    <div class="col-md-8">
+                        <div class="panel-body">
+                            <form role="form" action="./process/new_blog.php" method="post" enctype="multipart/form-data" id="frm_Blog">
                                 <div class="form-group">
                                     <label for="title">Título</label>
                                     <input type="text" class="form-control" id="title" autocomplete="off" name="title" />
                                 </div>
-                                <div class="form-group">    
+                                <div class="form-group">
                                     <label for="author">Autor</label>
-                                    <input type="text" class="form-control"  id="author" name="author" />
+                                    <input type="text" class="form-control" id="author" name="author" />
                                 </div>
-                                    <label >Fecha</label>
-                                    <input  name="date_blog" type="date" max="3000-12-31" min="1000-01-01" value="<?php echo date("Y-m-d");?>" class="form-control">
+                                <div class="form-group">
+                                    <label>Fecha</label>
+                                    <input name="date_blog" type="date" max="3000-12-31" min="1000-01-01" value="<?php echo date("Y-m-d");?>" class="form-control">
                                 </div>
+                                <input style="display:none" value="BL" type="text" class="form-control" id="type_blog" name="type_blog" />
+
                                 <div class="form-group">
                                     <label for="exampleInputFile">Imagen</label>
                                     <input type="file" class="form-control-file" class="btn btn-flat btn-sm" id="image" name="image" />
                                     <p class="help-block">Formato de imagenes admitido png, jpg, gif, jpeg</p>
-                                    
+
                                 </div>
                                 <div class="form-group">
-                                <label>Contenido del blog</label>
-					            	<textarea id="content" name="content"></textarea>
-                      </div>    
-                      <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-6">
-            <a href="../index.php" id="navbarDropdownMenuLink" class="btn btn-default" >Cancelar</a>
-						</div>
-						<div class="col-md-6">
-            <button type="submit" id="btn_Agregar" name ="btn_Agregar" class="btn btn-success">Agregar Blog</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>                         <br><br><br>  
+                                    <label>Contenido del blog</label>
+                                    <textarea id="content" name="content"></textarea>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <a href="../index.php" id="navbarDropdownMenuLink" class="btn btn-default">Cancelar</a>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="submit" id="btn_Agregar" name="btn_Agregar" class="btn btn-success">Agregar Blog</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
                             </form>
-                            </div>
+                        </div>
                     </div>
                     <div class="col-md-2">
                     </div>
@@ -125,6 +109,5 @@ li a {
             </div>
         </div>
     </div>
-	
 </body>
 </html>

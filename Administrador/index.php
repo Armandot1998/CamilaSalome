@@ -2,6 +2,7 @@
   session_start();
 
   require '../Conexion/conexion.php';
+  require '../process/simple_process.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
@@ -80,7 +81,16 @@
         <!--=========================CAJAS DE BLOGS================================-->
         <?php 
                 $rows = 0;
-                $stmt = $conn->prepare('SELECT id_blog, title, author, date_blog, image.name as name, content FROM blog inner join image on image.id_image = blog.id_image order by id_blog DESC');
+                $stmt = $conn->prepare('SELECT id_blog
+                                          , title
+                                          , author
+                                          , date_blog
+                                          , image.name as name
+                                          , content 
+                                        FROM blog 
+                                          INNER JOIN image on image.id_image = blog.id_image 
+                                        WHERE type_blog = "BL"
+                                        ORDER BY date_blog DESC');
                 $stmt->execute();
                // $results = $stmt->fetch(PDO::FETCH_ASSOC);
                 echo '<div class="container-fluid">
@@ -97,17 +107,21 @@
                             ';
                         }
                         echo '
-                                      <div class="col-md-4 ">
+                                      <div class="col-md-4">
                                         <div class="box">
                                           <img class="card-img-top" src="../imagenes/Blog-Img/'.$results['name'].'" alt="Image did not load...">
                                         </div>
+                                        <div>
                                         <p><h5 class="card-title">'.$results['title'].'</h5></p>
                                         <p>
                                           <a class="btn btn-outline-secondary waves-effect" href="./Admin-Blog/admin_edit_blog.php?id='.$results['id_blog'].'">Modificar</a>
                                           <a class="btn btn-outline-danger waves-effect" id="btnSA_'.$results['id_blog'].'" name ="'.$results['id_blog'].'" onClick= "EjecutarSweetAlert(this)">Eliminar</a>
                                         </p>
-                                      </div>
-                            ';
+                                        <p class="mt-10" align="justify">'.resumir(strip_tags($results['content'],'<br>'), 500, ".", "…").'</p>
+
+                                        </div>
+                                        </div>
+                                        ';
                     $rows = $rows+1;
                         if($rows==3){
                             $rows= 0;

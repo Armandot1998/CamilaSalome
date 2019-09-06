@@ -9,6 +9,9 @@
                             <a href="index.php" class="btn btn-flat btn-sm" role="button">
                                 <font color="white">Blog</font>
                             </a>
+                            <a href="Historias-De-Vida.php" class="btn btn-flat btn-sm" role="button">
+                                <font color="white">HISTORIAS DE VIDA</font>
+                            </a>
                             <a href="voluntariado.php" class="btn btn-flat btn-sm" role="button">
                                 <font color="white">Voluntariado</font>
                             </a>

@@ -20,26 +20,31 @@
 
     $name_image = "";
     $id_image_D = "";
-
+    $type_blog = "";
     //parametro para Colocar o eliminar imagen (puede estar vacio si no queremos una ruta especifica.)
     $name_path ="Blog-Img/"; //OBLIGATORIO - El "   /    " al final
 
-
+      //Recupera Datos del registro
+      $stmt = $conn->prepare('SELECT 
+                                    image.name as name_image
+                                    ,blog.id_image as id_image 
+                                    ,blog.type_blog as type_blog
+                                FROM blog 
+                                    INNER JOIN image on image.id_image = blog.id_image   
+                                WHERE blog.id_blog = :id');
+      $stmt->bindParam(':id',$id_blog);
+      $stmt->execute();
+      $results = $stmt->fetch(PDO::FETCH_ASSOC);
+      if (count($results) > 0) {
+          $name_image = $results['name_image'];
+          $id_image_D = $results['id_image'];
+          $type_blog = $results['type_blog'];
+      } 
     if(!$title=="" && !$date_blog=="" && !$content=="" ){
         
         if(!$file_name==""){
             $conditional_file = stripos($file_type,"image/");
             if($conditional_file !== false){
-
-                    //Recupera id de la imagen
-                $stmt = $conn->prepare('SELECT image.name as name_image,blog.id_image as id_image FROM blog inner join image on image.id_image = blog.id_image   WHERE blog.id_blog = :id');
-                $stmt->bindParam(':id',$id_blog);
-                $stmt->execute();
-                $results = $stmt->fetch(PDO::FETCH_ASSOC);
-                if (count($results) > 0) {
-                    $name_image = $results['name_image'];
-                    $id_image_D = $results['id_image'];
-                } 
                 $id_image = create_image($_FILES['image']['tmp_name'],$_FILES['image']['type'],$name_path,$path_long);
                 $sql_N =',id_image = :id_image
                         ';
@@ -50,7 +55,11 @@
         }
                 
         //inserta blog
-        $sql = 'UPDATE blog SET title = :title, author= :author ,date_blog= :date_blog,content = :content '.$sql_N.' where id_blog = :id_blog';
+        $sql = 'UPDATE blog SET title = :title
+                                , author= :author 
+                                ,date_blog= :date_blog
+                                ,content = :content '.$sql_N.' 
+                WHERE id_blog = :id_blog';
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':title', $title);
         $stmt->bindParam(':author', $author);
@@ -70,7 +79,11 @@
             //Eliminar imagen
             delete_image($id_image_D,$name_image,$name_path,$path_long);       
         }       
-        header("Location: ../../../Administrador/index.php");
+        if($type_blog=='BL'){
+            header("Location: ../../../Administrador/index.php");
+        }else{
+            header("Location: ../../../Administrador/Historias-De-Vida.php");
+        }
     } else {
         $message = 'Sorry, those credentials do not match';
     }

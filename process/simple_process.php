@@ -43,4 +43,17 @@ function mounth_date($n_mounth){
     return $final_mount;
 }
 
+function resumir($texto, $limite, $car=".", $final="…") 
+{
+if(strlen($texto) <= $limite) return $texto;
+  if(false !== ($breakpoint = strpos($texto, $car, $limite))) 
+  {
+   $val=strlen($texto)-1;
+   if( $breakpoint < $val)
+   {
+    $texto= substr($texto, 0, $breakpoint) . $final;
+   }
+  }
+return $texto;
+}
 ?>
