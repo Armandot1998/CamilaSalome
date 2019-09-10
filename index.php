@@ -104,7 +104,7 @@
                                 <ul>
 
                                     <!-- SLIDE 1 -->
-                                    <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg14.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+                                    <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
                                         <!-- MAIN IMAGE -->
                                         <img src="imagenes/img1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                                         <!-- LAYERS -->
@@ -128,7 +128,7 @@
                                     </li>
 
                                     <!-- SLIDE 2 -->
-                                    <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg6.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+                                    <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
                                         <!-- MAIN IMAGE -->
                                         <img src="imagenes/img2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                                         <!-- LAYERS -->
@@ -269,8 +269,11 @@
                                     <img class="img-fullwidth" src="imagenes/Amigos.png" alt="">
                                     <div class="text-center border-1px p-20 pt-0" style="background: #7fb03e">
                                         <h3 class="text-white mt-20">Amigos de Camila</h3>
+                                        <br>
                                         <p class="text-white">
                                             Generar un compromiso y participación activa.
+                                        <br>
+
                                         </p>
                                         <a href="apoyoinstitucional.php" class="btn btn-default">Leer más</a>
                                     </div>

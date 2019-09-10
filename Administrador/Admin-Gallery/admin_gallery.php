@@ -2,6 +2,7 @@
   session_start();
 
   require '../../Conexion/conexion.php';
+  require '../../process/simple_process.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
@@ -14,6 +15,9 @@
     if (count($results) > 0) {
       $user = $results;
     }
+  }
+  if(empty($user)){
+    header("Location: ../login.php");
   }
 ?>
 

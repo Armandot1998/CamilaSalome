@@ -129,7 +129,7 @@
                 </a>
                 <div class="ml-120">
                   <h5 class="icon-box-title mt-15 mb-10 text-uppercase" align="center">TELÉFONOS:</h5>
-                  <p class="text-gray" align="center">+593 - 22556 - 747 <br>+593 - 22491 - 508 <br>+593 - 9844 - 49329</p>
+                  <p class="text-gray" align="center">+593 - 22556 - 747 <br>+593 - 9983 - 11371 <br>+593 - 9844 - 49329</p>
                 </div>
               </div>
             </div>

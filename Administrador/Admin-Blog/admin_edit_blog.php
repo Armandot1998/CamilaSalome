@@ -15,6 +15,9 @@
       $user = $results;
     }
   }
+  if(empty($user)){
+    header("Location: ../login.php");
+  }
 ?>
 
 <!DOCTYPE html>

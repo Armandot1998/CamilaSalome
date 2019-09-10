@@ -91,7 +91,7 @@
               <div class="entry-header">
                 <div class="post-thumb thumb">
               <!-- EN ESTA PARTE VA LA IMAGEN DE LA NOTICIA -->
-                  <img src="imagenes/Blog-Img/'.$results['name_image'].'" alt="" class="img-responsive img-fullwidth">
+                  <img src="imagenes/Blog-Img/'.$results['name_image'].'" alt="" class="img-responsive">
               <!-- EDITAR HASTA AQUÍ -->
                 </div>
               </div>

@@ -85,7 +85,7 @@ img.zoom {
   <br>
   <?php 
                 $rows = 0;
-                $stmt = $conn->prepare('SELECT id_gallery, category, image.name as name,title, date_image  FROM gallery inner join image on image.id_image = gallery.id_image where category="Programa de Sencibilización"');
+                $stmt = $conn->prepare('SELECT id_gallery, category, image.name as name,title, date_image  FROM gallery inner join image on image.id_image = gallery.id_image where category="Aulas Domiciliarias"');
                 $stmt->execute();
                // $results = $stmt->fetch(PDO::FETCH_ASSOC);
                 echo '<div class="container-fluid mt-40">
@@ -103,9 +103,9 @@ img.zoom {
                         echo '
                         <div class="col-md-4  pp-gallery ">
                           <div class="box">
-                            <a href="../Imagenes/Gallery-Img/'.$results['name'].'" class="fancybox" rel="ligthbox">
+                            <a href="../imagenes/Gallery-Img/'.$results['name'].'" class="fancybox" rel="ligthbox">
                               <figure class="pp-effect">
-                                <img class="zoom img-fluid"  src="../Imagenes/Gallery-Img/'.$results['name'].'" alt="">
+                                <img class="zoom img-fluid"  src="../imagenes/Gallery-Img/'.$results['name'].'" alt="">
                                 <figcaption>
                                   <div class="h4">'.$results['title'].'</div>
                                   <p>'.date("d/m/Y",strtotime($results['date_image'])).'</p>

@@ -108,7 +108,7 @@
                    foreach($Gallery as $results){ ?>
                     <tr>
                       <td class="text-center"><?php echo $results['id_gallery'];?></td>
-                      <td class="text-center"><img width="150" height="130" src="../Imagenes/Gallery-Img/<?php  echo $results['name'];?>" /></td>
+                      <td class="text-center"><img width="150" height="130" src="../imagenes/Gallery-Img/<?php  echo $results['name'];?>" /></td>
                       <td class="text-center"><?php echo $results['title'];?></td>
                       <td class="text-center"><?php echo  date("d/m/Y",strtotime($results['date_image']));?></td>
                       <td class="text-center"><a class="btn btn-outline-secondary " href="./Admin-Gallery/admin_galleryU.php?id=<?php echo $results['id_gallery'];?>"><span class="fas fa-edit"></span></a>                      

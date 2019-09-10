@@ -26,6 +26,7 @@ author varchar(250) null,
 date_blog timestamp not null,
 id_image int not null,
 content text not null,
+type_blog varchar(2) not null,
 FOREIGN KEY (id_image) REFERENCES image(id_image)
 );
 

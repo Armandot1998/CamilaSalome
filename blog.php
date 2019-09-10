@@ -79,7 +79,7 @@
                         <div class="section-content pt-100">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h3 class="title text-white">Blog</h3>
+                                    <h3 class="title text-white">Noticias</h3>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                                         <div class="col-md-12">
                                             <div class="row">
 
-                <?php   }   ?>
+                                                <?php   }   ?>
 
                                                     <!-- INICIO DEL BLOQUE -->
                                                     <div class="col-md-4">
@@ -158,7 +158,7 @@
                                                         </article>
                                                     </div>
                                                     <!-- FIN DEL BLOQUE -->
-                         <?php
+                                                    <?php
 
                             $num_of_result= $num_of_result+1;
                             $rows = $rows+1;
@@ -170,7 +170,7 @@
                                         </div>
                                     </div>
 
-                 <?php
+                                    <?php
                             }
                         }
                     }
@@ -182,24 +182,24 @@
                     </div>
                     <div class="section-title text-center">
 
-                    <nav aria-lave="Pagina de ejemplo">
-                        <ul class="pagination">
-                            <li class="page-item  <?php echo $_GET['pagina'] >=1 ? 'disabled' : '' ?> ">
-                                <a class="page-link" href="blog.php?pagina=<?php echo ($_GET['pagina'])-1 ?>">Anterior</a></li>
-                            <?php for($i=0;$i<$paginas;$i++): ?>
-                                <li class="page-item <?php echo $_GET['pagina']==$i+1 ? 'active' : '' ?>  ">
-                                    <a class="page-link" href="blog.php?pagina=<?php echo $i+1 ?>">
-                                        <?php echo $i+1 ?>
-                                    </a>
-                                </li>
-                                <?php endfor ?>
-
-                                    <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?> ">
-                                        <a class="page-link" href="blog.php?pagina=<?php echo ($_GET['pagina'])+1 ?>">Siguiente</a>
+                        <nav aria-lave="Pagina de ejemplo">
+                            <ul class="pagination">
+                                <li class="page-item  <?php echo $_GET['pagina'] >=1 ? 'disabled' : '' ?> ">
+                                    <a class="page-link" href="blog.php?pagina=<?php echo ($_GET['pagina'])-1 ?>">Anterior</a></li>
+                                <?php for($i=0;$i<$paginas;$i++): ?>
+                                    <li class="page-item <?php echo $_GET['pagina']==$i+1 ? 'active' : '' ?>  ">
+                                        <a class="page-link" href="blog.php?pagina=<?php echo $i+1 ?>">
+                                            <?php echo $i+1 ?>
+                                        </a>
                                     </li>
-                        </ul>
-                    </nav>
-            </div>
+                                    <?php endfor ?>
+
+                                        <li class="page-item <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : '' ?> ">
+                                            <a class="page-link" href="blog.php?pagina=<?php echo ($_GET['pagina'])+1 ?>">Siguiente</a>
+                                        </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </section>
             </div>
 
